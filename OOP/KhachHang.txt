@@ -1,0 +1,11 @@
+Ten: Nguyen Thi Lan, Tuoi: 30, Gioi tinh: 123 Nguyen Trai, Dia chi: Nu, Ma Khach hang: KH001, So dien thoai 0123456789
+Ten: Tran Minh Hoang, Tuoi: 45, Gioi tinh: 456 Le Lai, Dia chi: Nam, Ma Khach hang: KH002, So dien thoai 0987654321
+Ten: Le Thi Bao, Tuoi: 25, Gioi tinh: 789 Nguyen Du, Dia chi: Nu, Ma Khach hang: KH003, So dien thoai 0933221122
+Ten: Pham Minh Tu, Tuoi: 35, Gioi tinh: 101 Hoang Hoa Tham, Dia chi: Nam, Ma Khach hang: KH004, So dien thoai 0912345678
+Ten: Ho Thi Lan, Tuoi: 28, Gioi tinh: 102 Hung Vuong, Dia chi: Nu, Ma Khach hang: KH005, So dien thoai 0945678901
+Ten: Nguyen Bao Tan, Tuoi: 40, Gioi tinh: 303 Cong Hoa, Dia chi: Nam, Ma Khach hang: KH006, So dien thoai 0987123456
+Ten: Duong Thi Minh, Tuoi: 33, Gioi tinh: 456 Thoai Ngoc Hau, Dia chi: Nu, Ma Khach hang: KH007, So dien thoai 0912233445
+Ten: Vu Thi Thu, Tuoi: 27, Gioi tinh: 567 Bao Ve, Dia chi: Nu, Ma Khach hang: KH008, So dien thoai 0906789123
+Ten: Dao Thanh Son, Tuoi: 50, Gioi tinh: 101 Doan Thi Diem, Dia chi: Nam, Ma Khach hang: KH009, So dien thoai 0933777788
+Ten: Nguyen Thi Kim, Tuoi: 22, Gioi tinh: 201 Tan Phu, Dia chi: Nu, Ma Khach hang: KH010, So dien thoai 0966554433
+Ten: 1, Tuoi: 1, Gioi tinh: 1, Dia chi: 1, Ma Khach hang: 1, So dien thoai 1
