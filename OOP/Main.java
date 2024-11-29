@@ -1,4 +1,4 @@
-import java.io.IOException;
+import java.io.*;
 import java.util.Scanner;
 
 public class Main {
@@ -28,14 +28,15 @@ public class Main {
 
             switch (choice) {
                 case 1:
+                    // Thêm nhân viên mới
                     NhanVien nv = new NhanVien();
-                    nv.nhap();
-                    danhSach.themNhanvien(nv);
+                    nv.nhap(); // Nhập thông tin nhân viên mới
+                    danhSach.themNhanvien(nv); // Thêm nhân viên vào danh sách
                     try {
-                        danhSach.luuFile("NhanVien.txt");
-                        System.out.println("Nhan vien da duoc them va luu vao file.");
+                        danhSach.luuFile("NhanVien.txt"); // Ghi nhân viên mới vào file mà không ghi đè
+                        System.out.println("Nhân viên đã được thêm và lưu vào file.");
                     } catch (IOException e) {
-                        System.out.println("Loi khi luu nhan vien vao file: " + e.getMessage());
+                        System.out.println("Lỗi khi lưu nhân viên vào file: " + e.getMessage());
                     }
                     break;
 

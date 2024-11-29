@@ -1,10 +1,21 @@
-Ten: Nguyen Van A, Tuoi: 30, Gioi tinh: Nam, Dia chi: 123 Nguyen Trai, Ha Noi, Ma nhan vien: NV01, Chuc vu: Quan ly, Luong: 1500.0
-Ten: Tran Thi B, Tuoi: 28, Gioi tinh: Nu, Dia chi: 456 Phan Dinh Phung, Ho Chi Minh, Ma nhan vien: NV02, Chuc vu: Lap trinh vien, Luong: 1200.0
-Ten: Le Van C, Tuoi: 35, Gioi tinh: Nam, Dia chi: 789 Ly Thai To, Da Nang, Ma nhan vien: NV03, Chuc vu: Thiet ke, Luong: 1100.0
-Ten: Pham Thi D, Tuoi: 32, Gioi tinh: Nu, Dia chi: 321 Tran Hung Dao, Hai Phong, Ma nhan vien: NV04, Chuc vu: Kiem thu, Luong: 1000.0
-Ten: Hoang Minh E, Tuoi: 27, Gioi tinh: Nam, Dia chi: 654 Pham Ngoc Thach, Ha Noi, Ma nhan vien: NV05, Chuc vu: Lap trinh vien, Luong: 1250.0
-Ten: Vu Thi F, Tuoi: 29, Gioi tinh: Nu, Dia chi: 987 Duong Le Duan, Nha Trang, Ma nhan vien: NV06, Chuc vu: Nhan su, Luong: 1100.0
-Ten: Doan Minh G, Tuoi: 40, Gioi tinh: Nam, Dia chi: 159 Duong Nguyen Van Linh, Ho Chi Minh, Ma nhan vien: NV07, Chuc vu: Quan ly, Luong: 1600.0
-Ten: Tran Quynh H, Tuoi: 26, Gioi tinh: Nu, Dia chi: 753 Nguyen Thai Hoc, Ha Noi, Ma nhan vien: NV08, Chuc vu: Lap trinh vien, Luong: 1150.0
-Ten: Bui Duc I, Tuoi: 33, Gioi tinh: Nam, Dia chi: 951 Duong Lang, Da Nang, Ma nhan vien: NV09, Chuc vu: Kiem thu, Luong: 1050.0
-Ten: Ly Mai J, Tuoi: 31, Gioi tinh: Nu, Dia chi: 258 Duong Cong Hoa, Ho Chi Minh, Ma nhan vien: NV10, Chuc vu: Thiet ke, Luong: 1300.0
+Tên: Nguyen A, Tuổi: 25, Giới tính: Nam, Địa chỉ: Hà Nội, Mã nhân viên: NV001, Chức vụ: Nhân viên, Lương: 5000000
+Tên: Le B, Tuổi: 30, Giới tính: Nữ, Địa chỉ: TP. HCM, Mã nhân viên: NV002, Chức vụ: Quản lý, Lương: 8000000
+Tên: Tran C, Tuổi: 28, Giới tính: Nam, Địa chỉ: Đà Nẵng, Mã nhân viên: NV003, Chức vụ: Nhân viên, Lương: 6000000
+Tên: Pham D, Tuổi: 35, Giới tính: Nữ, Địa chỉ: Bình Dương, Mã nhân viên: NV004, Chức vụ: Nhân viên, Lương: 5500000
+Tên: Hoang E, Tuổi: 26, Giới tính: Nam, Địa chỉ: Hà Nội, Mã nhân viên: NV005, Chức vụ: Quản lý, Lương: 9000000
+Tên: Nguyen F, Tuổi: 40, Giới tính: Nữ, Địa chỉ: TP. HCM, Mã nhân viên: NV006, Chức vụ: Nhân viên, Lương: 6500000
+Tên: Le G, Tuổi: 29, Giới tính: Nam, Địa chỉ: Đà Nẵng, Mã nhân viên: NV007, Chức vụ: Nhân viên, Lương: 5800000
+Tên: Tran H, Tuổi: 33, Giới tính: Nữ, Địa chỉ: Bình Dương, Mã nhân viên: NV008, Chức vụ: Nhân viên, Lương: 5600000
+Tên: Pham I, Tuổi: 27, Giới tính: Nam, Địa chỉ: Hà Nội, Mã nhân viên: NV009, Chức vụ: Nhân viên, Lương: 5100000
+Tên: Hoang J, Tuổi: 32, Giới tính: Nữ, Địa chỉ: TP. HCM, Mã nhân viên: NV010, Chức vụ: Quản lý, Lương: 7500000
+Ten: Nguyen A, Tuoi: 25, Gioi tinh: Nam, Dia chi: Hà Nội, Ma nhan vien: NV001, Chuc vu: Nhân viên, Luong: 5000000.0
+Ten: Le B, Tuoi: 30, Gioi tinh: Nữ, Dia chi: TP. HCM, Ma nhan vien: NV002, Chuc vu: Quản lý, Luong: 8000000.0
+Ten: Tran C, Tuoi: 28, Gioi tinh: Nam, Dia chi: Đà Nẵng, Ma nhan vien: NV003, Chuc vu: Nhân viên, Luong: 6000000.0
+Ten: Pham D, Tuoi: 35, Gioi tinh: Nữ, Dia chi: Bình Dương, Ma nhan vien: NV004, Chuc vu: Nhân viên, Luong: 5500000.0
+Ten: Hoang E, Tuoi: 26, Gioi tinh: Nam, Dia chi: Hà Nội, Ma nhan vien: NV005, Chuc vu: Quản lý, Luong: 9000000.0
+Ten: Nguyen F, Tuoi: 40, Gioi tinh: Nữ, Dia chi: TP. HCM, Ma nhan vien: NV006, Chuc vu: Nhân viên, Luong: 6500000.0
+Ten: Le G, Tuoi: 29, Gioi tinh: Nam, Dia chi: Đà Nẵng, Ma nhan vien: NV007, Chuc vu: Nhân viên, Luong: 5800000.0
+Ten: Tran H, Tuoi: 33, Gioi tinh: Nữ, Dia chi: Bình Dương, Ma nhan vien: NV008, Chuc vu: Nhân viên, Luong: 5600000.0
+Ten: Pham I, Tuoi: 27, Gioi tinh: Nam, Dia chi: Hà Nội, Ma nhan vien: NV009, Chuc vu: Nhân viên, Luong: 5100000.0
+Ten: Hoang J, Tuoi: 32, Gioi tinh: Nữ, Dia chi: TP. HCM, Ma nhan vien: NV010, Chuc vu: Quản lý, Luong: 7500000.0
+Ten: 1, Tuoi: 1, Gioi tinh: 1, Dia chi: 1, Ma nhan vien: 1, Chuc vu: 1, Luong: 1.0

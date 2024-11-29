@@ -68,12 +68,16 @@ public class DanhSachNhanVienImpl implements DanhSachNhanVien {
     }
 
     // Luu danh sach nhan vien vao file
+    // Lưu danh sách nhân viên vào file (bổ sung vào cuối file)
     public void luuFile(String filename) throws IOException {
-        BufferedWriter writer = new BufferedWriter(new FileWriter(filename));
+        // Sử dụng FileWriter với tham số true để ghi thêm vào cuối file
+        BufferedWriter writer = new BufferedWriter(new FileWriter(filename, true));
+
+        // Lưu tất cả nhân viên vào file, mỗi nhân viên một dòng
         for (int i = 0; i < soLuongNhanVien; i++) {
             if (danhSachNhanVien[i] != null) {
-                writer.write(danhSachNhanVien[i].toString());
-                writer.newLine();
+                writer.write(danhSachNhanVien[i].toString()); // Ghi thông tin nhân viên
+                writer.newLine(); // Xuống dòng sau mỗi nhân viên
             }
         }
         writer.close();

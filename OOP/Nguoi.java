@@ -70,6 +70,10 @@ public abstract class Nguoi {
         this.diaChi = sc.nextLine();
     }
 
+    public String toString() {
+        return "Ten: " + ten + ", Tuoi: " + tuoi + ", Gioi tinh: " + gioiTinh + ", Dia chi: " + diaChi;
+    }
+
     // Phương thức trừu tượng hiển thị thông tin
     public abstract void hienThiThongTin();
 }
