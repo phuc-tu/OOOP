@@ -6,25 +6,25 @@ public class Main {
         DanhSachNhanVienImpl danhSach = new DanhSachNhanVienImpl();
         Scanner sc = new Scanner(System.in);
 
-        // Doc du lieu tu file (neu co)
+        // Đọc dữ liệu từ file (nếu có)
         try {
             danhSach.docFile("NhanVien.txt");
         } catch (IOException e) {
-            System.out.println("Loi khi doc file: " + e.getMessage());
+            System.out.println("Lỗi khi đọc file: " + e.getMessage());
         }
 
         boolean exit = false;
         while (!exit) {
-            System.out.println("\n1. Them nhan vien (va luu vao file)");
-            System.out.println("2. Sua nhan vien");
-            System.out.println("3. Xoa nhan vien");
-            System.out.println("4. Tim nhan vien");
-            System.out.println("5. Hien thi danh sach nhan vien");
-            System.out.println("7. Thoat");
-            System.out.print("Chon: ");
+            System.out.println("\n1. Thêm nhân viên (và lưu vào file)");
+            System.out.println("2. Sửa nhân viên");
+            System.out.println("3. Xóa nhân viên");
+            System.out.println("4. Tìm nhân viên");
+            System.out.println("5. Hiển thị danh sách nhân viên");
+            System.out.println("7. Thoát");
+            System.out.print("Chọn: ");
 
             int choice = sc.nextInt();
-            sc.nextLine(); // Doc ky tu newline con lai
+            sc.nextLine(); // Đọc ký tự newline còn lại
 
             switch (choice) {
                 case 1:
@@ -33,7 +33,7 @@ public class Main {
                     nv.nhap(); // Nhập thông tin nhân viên mới
                     danhSach.themNhanvien(nv); // Thêm nhân viên vào danh sách
                     try {
-                        danhSach.luuFile("NhanVien.txt"); // Ghi nhân viên mới vào file mà không ghi đè
+                        danhSach.luuFile("NhanVien.txt"); // Ghi danh sách nhân viên vào file
                         System.out.println("Nhân viên đã được thêm và lưu vào file.");
                     } catch (IOException e) {
                         System.out.println("Lỗi khi lưu nhân viên vào file: " + e.getMessage());
@@ -41,38 +41,50 @@ public class Main {
                     break;
 
                 case 2:
-                    System.out.print("Nhap ma nhan vien can sua: ");
+                    System.out.print("Nhập mã nhân viên cần sửa: ");
                     String idSua = sc.nextLine();
                     NhanVien nvMoi = new NhanVien();
                     nvMoi.nhap();
                     danhSach.suaNhanvien(idSua, nvMoi);
+                    try {
+                        danhSach.luuFile("NhanVien.txt"); // Lưu lại danh sách nhân viên sau khi sửa
+                        System.out.println("Nhân viên đã được sửa và lưu vào file.");
+                    } catch (IOException e) {
+                        System.out.println("Lỗi khi lưu nhân viên vào file: " + e.getMessage());
+                    }
                     break;
 
                 case 3:
-                    System.out.print("Nhap ma nhan vien can xoa: ");
+                    System.out.print("Nhập mã nhân viên cần xóa: ");
                     String idXoa = sc.nextLine();
                     danhSach.xoaNhanvien(idXoa);
+                    try {
+                        danhSach.luuFile("NhanVien.txt"); // Lưu lại danh sách nhân viên sau khi xóa
+                        System.out.println("Nhân viên đã được xóa và lưu vào file.");
+                    } catch (IOException e) {
+                        System.out.println("Lỗi khi lưu nhân viên vào file: " + e.getMessage());
+                    }
                     break;
 
                 case 4:
-                    System.out.print("Nhap ma nhan vien can tim: ");
+                    System.out.print("Nhập mã nhân viên cần tìm: ");
                     String idTim = sc.nextLine();
                     NhanVien nvTim = danhSach.timNhanvien(idTim);
-                    System.out.println(nvTim != null ? nvTim : "Khong tim thay nhan vien voi ma nay.");
+                    System.out.println(nvTim != null ? nvTim : "Không tìm thấy nhân viên với mã này.");
                     break;
 
                 case 5:
-                    System.out.println("Danh sach nhan vien:");
+                    System.out.println("Danh sách nhân viên:");
                     danhSach.hienThiNhanvien();
                     break;
 
                 case 7:
                     exit = true;
-                    System.out.println("Chuong trinh ket thuc.");
+                    System.out.println("Chương trình kết thúc.");
                     break;
 
                 default:
-                    System.out.println("Lua chon khong hop le.");
+                    System.out.println("Lựa chọn không hợp lệ.");
                     break;
             }
         }

@@ -1,13 +1,3 @@
-Tên: Nguyen A, Tuổi: 25, Giới tính: Nam, Địa chỉ: Hà Nội, Mã nhân viên: NV001, Chức vụ: Nhân viên, Lương: 5000000
-Tên: Le B, Tuổi: 30, Giới tính: Nữ, Địa chỉ: TP. HCM, Mã nhân viên: NV002, Chức vụ: Quản lý, Lương: 8000000
-Tên: Tran C, Tuổi: 28, Giới tính: Nam, Địa chỉ: Đà Nẵng, Mã nhân viên: NV003, Chức vụ: Nhân viên, Lương: 6000000
-Tên: Pham D, Tuổi: 35, Giới tính: Nữ, Địa chỉ: Bình Dương, Mã nhân viên: NV004, Chức vụ: Nhân viên, Lương: 5500000
-Tên: Hoang E, Tuổi: 26, Giới tính: Nam, Địa chỉ: Hà Nội, Mã nhân viên: NV005, Chức vụ: Quản lý, Lương: 9000000
-Tên: Nguyen F, Tuổi: 40, Giới tính: Nữ, Địa chỉ: TP. HCM, Mã nhân viên: NV006, Chức vụ: Nhân viên, Lương: 6500000
-Tên: Le G, Tuổi: 29, Giới tính: Nam, Địa chỉ: Đà Nẵng, Mã nhân viên: NV007, Chức vụ: Nhân viên, Lương: 5800000
-Tên: Tran H, Tuổi: 33, Giới tính: Nữ, Địa chỉ: Bình Dương, Mã nhân viên: NV008, Chức vụ: Nhân viên, Lương: 5600000
-Tên: Pham I, Tuổi: 27, Giới tính: Nam, Địa chỉ: Hà Nội, Mã nhân viên: NV009, Chức vụ: Nhân viên, Lương: 5100000
-Tên: Hoang J, Tuổi: 32, Giới tính: Nữ, Địa chỉ: TP. HCM, Mã nhân viên: NV010, Chức vụ: Quản lý, Lương: 7500000
 Ten: Nguyen A, Tuoi: 25, Gioi tinh: Nam, Dia chi: Hà Nội, Ma nhan vien: NV001, Chuc vu: Nhân viên, Luong: 5000000.0
 Ten: Le B, Tuoi: 30, Gioi tinh: Nữ, Dia chi: TP. HCM, Ma nhan vien: NV002, Chuc vu: Quản lý, Luong: 8000000.0
 Ten: Tran C, Tuoi: 28, Gioi tinh: Nam, Dia chi: Đà Nẵng, Ma nhan vien: NV003, Chuc vu: Nhân viên, Luong: 6000000.0
