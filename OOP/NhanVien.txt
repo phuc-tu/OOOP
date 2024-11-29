@@ -1,0 +1,10 @@
+Ten: Nguyen Van A, Tuoi: 30, Gioi tinh: Nam, Dia chi: 123 Nguyen Trai, Ha Noi, Ma nhan vien: NV01, Chuc vu: Quan ly, Luong: 1500.0
+Ten: Tran Thi B, Tuoi: 28, Gioi tinh: Nu, Dia chi: 456 Phan Dinh Phung, Ho Chi Minh, Ma nhan vien: NV02, Chuc vu: Lap trinh vien, Luong: 1200.0
+Ten: Le Van C, Tuoi: 35, Gioi tinh: Nam, Dia chi: 789 Ly Thai To, Da Nang, Ma nhan vien: NV03, Chuc vu: Thiet ke, Luong: 1100.0
+Ten: Pham Thi D, Tuoi: 32, Gioi tinh: Nu, Dia chi: 321 Tran Hung Dao, Hai Phong, Ma nhan vien: NV04, Chuc vu: Kiem thu, Luong: 1000.0
+Ten: Hoang Minh E, Tuoi: 27, Gioi tinh: Nam, Dia chi: 654 Pham Ngoc Thach, Ha Noi, Ma nhan vien: NV05, Chuc vu: Lap trinh vien, Luong: 1250.0
+Ten: Vu Thi F, Tuoi: 29, Gioi tinh: Nu, Dia chi: 987 Duong Le Duan, Nha Trang, Ma nhan vien: NV06, Chuc vu: Nhan su, Luong: 1100.0
+Ten: Doan Minh G, Tuoi: 40, Gioi tinh: Nam, Dia chi: 159 Duong Nguyen Van Linh, Ho Chi Minh, Ma nhan vien: NV07, Chuc vu: Quan ly, Luong: 1600.0
+Ten: Tran Quynh H, Tuoi: 26, Gioi tinh: Nu, Dia chi: 753 Nguyen Thai Hoc, Ha Noi, Ma nhan vien: NV08, Chuc vu: Lap trinh vien, Luong: 1150.0
+Ten: Bui Duc I, Tuoi: 33, Gioi tinh: Nam, Dia chi: 951 Duong Lang, Da Nang, Ma nhan vien: NV09, Chuc vu: Kiem thu, Luong: 1050.0
+Ten: Ly Mai J, Tuoi: 31, Gioi tinh: Nu, Dia chi: 258 Duong Cong Hoa, Ho Chi Minh, Ma nhan vien: NV10, Chuc vu: Thiet ke, Luong: 1300.0
