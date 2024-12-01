@@ -1,4 +1,5 @@
 import java.io.IOException;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Shop_main {
@@ -10,17 +11,19 @@ public class Shop_main {
             System.out.println("2. Quan li khach hang:");
             System.out.println("3. Quan li nha cung cap:");
             System.out.println("4. Quan li phieu nhap hang:");
-            System.out.println("5.Quan li chi tiet nhap hang:");
+            System.out.println("5. Quan li chi tiet nhap hang:");
             System.out.println("0. Thoat chuong trinh");
 
-            int chon = sc.nextInt();
-
-            if (chon == 0) {
-                System.out.println("Thoat chuong trinh, bye nha!");
-                break; // Thoát khỏi vòng lặp khi người dùng chọn 0
-            }
-
+            int chon;
             try {
+                System.out.print("Nhap lua chon cua ban: ");
+                chon = sc.nextInt(); // Lấy giá trị người dùng nhập
+
+                if (chon == 0) {
+                    System.out.println("Thoat chuong trinh, bye nha!");
+                    break;
+                }
+
                 switch (chon) {
                     case 1:
                         Main_Nv.main(new String[] {});
@@ -36,13 +39,18 @@ public class Shop_main {
                         break;
                     case 5:
                         Main_Ctnh.main(new String[] {});
+                        break;
                     default:
-                        System.out.println("Lua chon khong le.Moi ban nhap lai");
+                        System.out.println("Lua chon khong hop le. Moi ban nhap lai.");
                         break;
                 }
+            } catch (InputMismatchException e) {
+                System.out.println("Vui long nhap so nguyen hop le!");
+                sc.nextLine(); // Xóa bỏ dữ liệu không hợp lệ trong Scanner
             } catch (IOException e) {
-                System.out.println("Có loi xay ra khi: " + e.getMessage());
+                System.out.println("Có lỗi xảy ra: " + e.getMessage());
             }
         }
+        sc.close(); // Đóng Scanner sau khi sử dụng
     }
 }
