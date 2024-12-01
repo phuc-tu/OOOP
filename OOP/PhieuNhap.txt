@@ -18,5 +18,4 @@ Ma phieu: PN017, Ma NCC: NCC017, Ngay nhap: 17/11/2024, Tong tien: 1150000.0
 Ma phieu: PN018, Ma NCC: NCC018, Ngay nhap: 18/11/2024, Tong tien: 950000.0
 Ma phieu: PN019, Ma NCC: NCC019, Ngay nhap: 19/11/2024, Tong tien: 1050000.0
 Ma phieu: PN020, Ma NCC: NCC020, Ngay nhap: 20/11/2024, Tong tien: 990000.0
-Ma phieu: 1, Ma NCC: 1, Ngay nhap: 1, Tong tien: 11.0
 Ma phieu: 1, Ma NCC: 1, Ngay nhap: 11/11/2013, Tong tien: 23.0

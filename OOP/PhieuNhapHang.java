@@ -6,11 +6,11 @@ public class PhieuNhapHang {
     private String ngayNhap;
     private double tongTien;
 
-    // Constructor không tham số
+
     public PhieuNhapHang() {
     }
 
-    // Constructor đầy đủ tham số
+    
     public PhieuNhapHang(String maPhieu, String maNcc, String ngayNhap, double tongTien) {
         this.maPhieu = maPhieu;
         this.maNcc = maNcc;
@@ -18,7 +18,7 @@ public class PhieuNhapHang {
         this.tongTien = tongTien;
     }
 
-    // Getter và Setter
+    
     public String getMaPhieu() {
         return maPhieu;
     }
@@ -51,7 +51,7 @@ public class PhieuNhapHang {
         this.tongTien = tongTien;
     }
 
-    // Phương thức nhập thông tin phiếu
+    
     public void nhap() {
         Scanner sc = new Scanner(System.in);
 
@@ -68,7 +68,6 @@ public class PhieuNhapHang {
         tongTien = sc.nextDouble();
     }
 
-    // Phương thức hiển thị thông tin phiếu
     @Override
     public String toString() {
         return "Ma phieu: " + maPhieu + ", Ma NCC: " + maNcc + ", Ngay nhap: " + ngayNhap + ", Tong tien: " + tongTien;

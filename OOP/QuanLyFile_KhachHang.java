@@ -2,7 +2,6 @@ import java.io.*;
 
 public class QuanLyFile_KhachHang {
 
-    // Lưu danh sách khách hàng vào file
     public static void luuDanhSachKhachHang(KhachHang[] danhSach, int soLuong, String filename) throws IOException {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filename))) {
             for (int i = 0; i < soLuong; i++) {
@@ -12,7 +11,6 @@ public class QuanLyFile_KhachHang {
         }
     }
 
-    // Đọc danh sách khách hàng từ file
     public static int docDanhSachKhachHang(KhachHang[] danhSach, String filename) throws IOException {
         int count = 0;
         try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
@@ -27,7 +25,6 @@ public class QuanLyFile_KhachHang {
         return count;
     }
 
-    // Phương thức này phân tích một dòng văn bản và tạo đối tượng KhachHang
     private static KhachHang parseKhachHangFromLine(String line) {
         String[] parts = line.split(", ");
         if (parts.length < 6) {

@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.Scanner;
 
-public class Main_PhieuNhapHang {
+public class Main_Pnh {
     public static void main(String[] args) throws IOException {
         DanhSachPhieuNhapHangImpl danhSach = new DanhSachPhieuNhapHangImpl();
         Scanner sc = new Scanner(System.in);

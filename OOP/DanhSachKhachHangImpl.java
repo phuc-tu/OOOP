@@ -5,7 +5,7 @@ public class DanhSachKhachHangImpl implements DanhSachKhachHang {
     private int soLuongKhachHang;
 
     public DanhSachKhachHangImpl() {
-        this.danhSachKhachHang = new KhachHang[100]; // Mang voi kich thuoc co dinh 100
+        this.danhSachKhachHang = new KhachHang[100]; 
         this.soLuongKhachHang = 0;
     }
 
@@ -33,11 +33,11 @@ public class DanhSachKhachHangImpl implements DanhSachKhachHang {
     public void xoaKhachhang(String id) {
         for (int i = 0; i < soLuongKhachHang; i++) {
             if (danhSachKhachHang[i] != null && danhSachKhachHang[i].getId().equals(id)) {
-                // Doi cac phan tu sau len de "xoa" phan tu
+                
                 for (int j = i; j < soLuongKhachHang - 1; j++) {
                     danhSachKhachHang[j] = danhSachKhachHang[j + 1];
                 }
-                danhSachKhachHang[--soLuongKhachHang] = null; // Giam so luong khach hang
+                danhSachKhachHang[--soLuongKhachHang] = null; 
                 return;
             }
         }
@@ -67,19 +67,19 @@ public class DanhSachKhachHangImpl implements DanhSachKhachHang {
         }
     }
 
-    // Luu danh sach khach hang vao file
+    
     public void luuFile(String filename) throws IOException {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filename))) {
             for (int i = 0; i < soLuongKhachHang; i++) {
                 if (danhSachKhachHang[i] != null) {
                     writer.write(danhSachKhachHang[i].toString());
-                    writer.newLine(); // Xuong dong sau moi khach hang
+                    writer.newLine(); 
                 }
             }
         }
     }
 
-    // Doc danh sach khach hang tu file
+    
     public void docFile(String filename) throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader(filename));
         String line;

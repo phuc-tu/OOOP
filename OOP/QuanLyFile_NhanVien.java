@@ -27,7 +27,7 @@ public class QuanLyFile_NhanVien {
     private static NhanVien parseNhanVienFromLine(String line) {
         String[] parts = line.split(", ");
         if (parts.length < 7) {
-            System.out.println("Dữ liệu không hợp lệ: " + line);
+            System.out.println("Du lieu khong hop le: " + line);
             return null;
         }
         String name = parts[0].split(": ")[1];

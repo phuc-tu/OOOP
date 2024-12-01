@@ -5,7 +5,7 @@ public class DanhSachNhanVienImpl implements DanhSachNhanVien {
     private int soLuongNhanVien;
 
     public DanhSachNhanVienImpl() {
-        this.danhSachNhanVien = new NhanVien[100]; // Mang co dinh voi kich thuoc 100
+        this.danhSachNhanVien = new NhanVien[100];
         this.soLuongNhanVien = 0;
     }
 
@@ -67,33 +67,25 @@ public class DanhSachNhanVienImpl implements DanhSachNhanVien {
         }
     }
 
-    // Luu danh sach nhan vien vao file
-    // Lưu danh sách nhân viên vào file (bổ sung vào cuối file)
-    // Lưu danh sách nhân viên vào file (ghi đè lên file cũ với toàn bộ danh sách)
     public void luuFile(String filename) throws IOException {
-        // Mở file để ghi (không append)
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filename))) {
-            // Lưu tất cả nhân viên vào file, mỗi nhân viên một dòng
             for (int i = 0; i < soLuongNhanVien; i++) {
                 if (danhSachNhanVien[i] != null) {
-                    writer.write(danhSachNhanVien[i].toString()); // Ghi thông tin nhân viên
-                    writer.newLine(); // Xuống dòng sau mỗi nhân viên
+                    writer.write(danhSachNhanVien[i].toString());
+                    writer.newLine();
                 }
             }
         }
     }
 
-    // Doc danh sach nhan vien tu file
     public void docFile(String filename) throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader(filename));
         String line;
         soLuongNhanVien = 0;
 
         while ((line = reader.readLine()) != null) {
-            // Tach dong thanh cac phan tu bang dau phay va khoang trang
             String[] fields = line.split(", ");
 
-            // Kiem tra neu dong du lieu co du thong tin
             if (fields.length >= 7) {
                 try {
                     String name = fields[0].split(": ")[1];
@@ -104,7 +96,6 @@ public class DanhSachNhanVienImpl implements DanhSachNhanVien {
                     String chucvu = fields[5].split(": ")[1];
                     double luong = Double.parseDouble(fields[6].split(": ")[1]);
 
-                    // Tao doi tuong NhanVien va them vao danh sach
                     NhanVien nv = new NhanVien(name, age, gender, address, id, chucvu, luong);
                     themNhanvien(nv);
                 } catch (Exception e) {

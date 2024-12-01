@@ -8,3 +8,4 @@ Ten: Le G, Tuoi: 29, Gioi tinh: Nam, Dia chi: Đà Nẵng, Ma nhan vien: NV007, 
 Ten: Tran H, Tuoi: 33, Gioi tinh: Nữ, Dia chi: Bình Dương, Ma nhan vien: NV008, Chuc vu: Nhân viên, Luong: 5600000.0
 Ten: Pham I, Tuoi: 27, Gioi tinh: Nam, Dia chi: Hà Nội, Ma nhan vien: NV009, Chuc vu: Nhân viên, Luong: 5100000.0
 Ten: Hoang J, Tuoi: 32, Gioi tinh: Nữ, Dia chi: TP. HCM, Ma nhan vien: NV010, Chuc vu: Quản lý, Luong: 7500000.0
+Ten: 1, Tuoi: 1, Gioi tinh: 1, Dia chi: 1, Ma nhan vien: 1, Chuc vu: 1, Luong: 1.0

@@ -5,7 +5,7 @@ public class DanhSachPhieuNhapHangImpl implements DanhSachPhieuNhapHang {
     private int soLuongPhieu;
 
     public DanhSachPhieuNhapHangImpl() {
-        this.danhSachPhieu = new PhieuNhapHang[100]; // Mảng cố định với 100 phần tử
+        this.danhSachPhieu = new PhieuNhapHang[100];
         this.soLuongPhieu = 0;
     }
 
