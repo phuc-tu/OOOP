@@ -1,7 +1,7 @@
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Main_sanpham {
+public class Shop_main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         while (true) {
@@ -10,6 +10,7 @@ public class Main_sanpham {
             System.out.println("2. Quan li khach hang:");
             System.out.println("3. Quan li nha cung cap:");
             System.out.println("4. Quan li phieu nhap hang:");
+            System.out.println("5.Quan li chi tiet nhap hang:");
             System.out.println("0. Thoat chuong trinh");
 
             int chon = sc.nextInt();
@@ -33,6 +34,8 @@ public class Main_sanpham {
                     case 4:
                         Main_Pnh.main(new String[] {});
                         break;
+                    case 5:
+                        Main_Ctnh.main(new String[] {});
                     default:
                         System.out.println("Lua chon khong le.Moi ban nhap lai");
                         break;
