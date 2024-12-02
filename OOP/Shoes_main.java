@@ -8,16 +8,22 @@ public class Shoes_main {
         boolean exit = false;
         while (!exit) {
             System.out.println("----CHUONG TRINH QUAN LI----- ");
+            System.out.println("0.Quan li san pham;");
             System.out.println("1. Quan li nhan vien:");
             System.out.println("2. Quan li khach hang:");
             System.out.println("3. Quan li nha cung cap:");
             System.out.println("4. Quan li phieu nhap hang:");
             System.out.println("5. Quan li chi tiet nhap hang:");
+            System.out.println("6. Quan Li hoa don:");
+            System.out.println("7.Quan li chi tiet hoa don:");
             System.out.println("0. Thoat chuong trinh");
 
             int chon = sc.nextInt();
 
             switch (chon) {
+                case 0:
+                    Main_Sp.main(new String[0]);
+                    break;
                 case 1:
                     Main_Nv.main(new String[0]);
                     break;
@@ -32,6 +38,12 @@ public class Shoes_main {
                     break;
                 case 5:
                     Main_Ctnh.main(new String[] {});
+                    break;
+                case 6:
+                    Main_Dshd.main(new String[] {});
+                    break;
+                case 7:
+                    Main_Cthd.main(new String[] {});
                     break;
                 default:
                     System.out.println("Lua chon khong hop le. Moi ban nhap lai.");
