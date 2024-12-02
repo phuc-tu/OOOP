@@ -63,9 +63,8 @@ public class DanhSachChiTietDonNhapHangImpl implements DanhSachChiTietDonNhapHan
         }
     }
 
-    // Lưu danh sách vào file
     public void luuFile(String filename) throws IOException {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filename, true))) { // Append mode
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filename, true))) {
             for (int i = 0; i < soLuongChiTiet; i++) {
                 if (danhSachChiTiet[i] != null) {
                     writer.write(danhSachChiTiet[i].toString());
@@ -75,7 +74,6 @@ public class DanhSachChiTietDonNhapHangImpl implements DanhSachChiTietDonNhapHan
         }
     }
 
-    // Đọc danh sách từ file và lưu vào bộ nhớ
     public void docFile(String filename) throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader(filename));
         String line;
@@ -89,8 +87,9 @@ public class DanhSachChiTietDonNhapHangImpl implements DanhSachChiTietDonNhapHan
                     String maSp = fields[1].split(": ")[1];
                     double sl = Double.parseDouble(fields[2].split(": ")[1]);
                     double donGia = Double.parseDouble(fields[3].split(": ")[1]);
-
+                    double tongTien = Double.parseDouble(fields[4].split(": ")[1]);
                     ChiTietDonNhapHang ctnh = new ChiTietDonNhapHang(maPn, maSp, sl, donGia);
+                    ctnh.setTongTien(tongTien);
                     themChiTietDonNhapHang(ctnh);
                 } catch (Exception e) {
                     System.out.println("Loi khi doc dong: " + line);

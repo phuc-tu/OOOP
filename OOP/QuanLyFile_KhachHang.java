@@ -28,7 +28,7 @@ public class QuanLyFile_KhachHang {
     private static KhachHang parseKhachHangFromLine(String line) {
         String[] parts = line.split(", ");
         if (parts.length < 6) {
-            System.out.println("Dữ liệu không hợp lệ: " + line);
+            System.out.println("du lieu khong hop le: " + line);
             return null;
         }
         String name = parts[0].split(": ")[1];

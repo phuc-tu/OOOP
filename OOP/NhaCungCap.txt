@@ -13,8 +13,6 @@ Ma Ncc: NCC012, Ten Ncc: Cong ty Nam Hai, Dia chi: Thanh Hoa, So dien thoai: 092
 Ma Ncc: NCC013, Ten Ncc: Cong ty Tuan Kien, Dia chi: Vinh Phuc, So dien thoai: 0932678901, Gmail: tuankien@gmail.com
 Ma Ncc: NCC014, Ten Ncc: Nha Cung Cap Xanh, Dia chi: Hue, So dien thoai: 0941234567, Gmail: nhacungcapxanh@gmail.com
 Ma Ncc: NCC015, Ten Ncc: Cong ty Hoa Sen, Dia chi: Binh Thuan, So dien thoai: 0965487890, Gmail: hoasen@gmail.com
-Ma Ncc: 1, Ten Ncc: 1 , Dia chi: 1 , So dien thoai: 1 , Gmail: 1
-Ma Ncc: 2, Ten Ncc: 2 , Dia chi: 2 , So dien thoai: 2 , Gmail: 2
 Ma Ncc: NCC001, Ten Ncc: Cong ty TNHH ABC , Dia chi: Ha Noi , So dien thoai: 0123456789 , Gmail: abccorp@gmail.com
 Ma Ncc: NCC002, Ten Ncc: Cong ty Xanh , Dia chi: Da Nang , So dien thoai: 0987654321 , Gmail: xanhco@gmail.com
 Ma Ncc: NCC003, Ten Ncc: Nha Cung Cap A , Dia chi: TP. Ho Chi Minh , So dien thoai: 0901234567 , Gmail: nccA@gmail.com
@@ -30,8 +28,6 @@ Ma Ncc: NCC012, Ten Ncc: Cong ty Nam Hai , Dia chi: Thanh Hoa , So dien thoai: 0
 Ma Ncc: NCC013, Ten Ncc: Cong ty Tuan Kien , Dia chi: Vinh Phuc , So dien thoai: 0932678901 , Gmail: tuankien@gmail.com
 Ma Ncc: NCC014, Ten Ncc: Nha Cung Cap Xanh , Dia chi: Hue , So dien thoai: 0941234567 , Gmail: nhacungcapxanh@gmail.com
 Ma Ncc: NCC015, Ten Ncc: Cong ty Hoa Sen , Dia chi: Binh Thuan , So dien thoai: 0965487890 , Gmail: hoasen@gmail.com
-Ma Ncc: 1, Ten Ncc: 1  , Dia chi: 1  , So dien thoai: 1  , Gmail: 1
-Ma Ncc: 2, Ten Ncc: 2  , Dia chi: 2  , So dien thoai: 2  , Gmail: 2
 Ma Ncc: 1, Ten Ncc: 1 , Dia chi: 1 , So dien thoai: 1 , Gmail: 1
 Ma Ncc: NCC001, Ten Ncc: Cong ty TNHH ABC , Dia chi: Ha Noi , So dien thoai: 0123456789 , Gmail: abccorp@gmail.com
 Ma Ncc: NCC002, Ten Ncc: Cong ty Xanh , Dia chi: Da Nang , So dien thoai: 0987654321 , Gmail: xanhco@gmail.com
@@ -48,26 +44,8 @@ Ma Ncc: NCC012, Ten Ncc: Cong ty Nam Hai , Dia chi: Thanh Hoa , So dien thoai: 0
 Ma Ncc: NCC013, Ten Ncc: Cong ty Tuan Kien , Dia chi: Vinh Phuc , So dien thoai: 0932678901 , Gmail: tuankien@gmail.com
 Ma Ncc: NCC014, Ten Ncc: Nha Cung Cap Xanh , Dia chi: Hue , So dien thoai: 0941234567 , Gmail: nhacungcapxanh@gmail.com
 Ma Ncc: NCC015, Ten Ncc: Cong ty Hoa Sen , Dia chi: Binh Thuan , So dien thoai: 0965487890 , Gmail: hoasen@gmail.com
-Ma Ncc: 12, Ten Ncc: 12 , Dia chi: 12 , So dien thoai: 2 , Gmail: 3
-Ma Ncc: 2, Ten Ncc: 2  , Dia chi: 2  , So dien thoai: 2  , Gmail: 2
-Ma Ncc: NCC001, Ten Ncc: Cong ty TNHH ABC  , Dia chi: Ha Noi  , So dien thoai: 0123456789  , Gmail: abccorp@gmail.com
-Ma Ncc: NCC002, Ten Ncc: Cong ty Xanh  , Dia chi: Da Nang  , So dien thoai: 0987654321  , Gmail: xanhco@gmail.com
-Ma Ncc: NCC003, Ten Ncc: Nha Cung Cap A  , Dia chi: TP. Ho Chi Minh  , So dien thoai: 0901234567  , Gmail: nccA@gmail.com
-Ma Ncc: NCC004, Ten Ncc: Cong ty Thien An  , Dia chi: Hai Phong  , So dien thoai: 0912345678  , Gmail: thienan@gmail.com
-Ma Ncc: NCC005, Ten Ncc: Cong ty Dich Vu Hoan Hao  , Dia chi: Quang Ninh  , So dien thoai: 0123987456  , Gmail: hoanhao@gmail.com
-Ma Ncc: NCC006, Ten Ncc: Xay Dung Bac Nam  , Dia chi: Binh Duong  , So dien thoai: 0908765432  , Gmail: xbnam@gmail.com
-Ma Ncc: NCC007, Ten Ncc: Cong ty Minh Tan  , Dia chi: Quang Ngai  , So dien thoai: 0913765432  , Gmail: minhtan@gmail.com
-Ma Ncc: NCC008, Ten Ncc: Cong ty Quoc Te  , Dia chi: Can Tho  , So dien thoai: 0982345678  , Gmail: quocte@gmail.com
-Ma Ncc: NCC009, Ten Ncc: Thuong Mai 24/7  , Dia chi: Binh Phuoc  , So dien thoai: 0938765432  , Gmail: tm247@gmail.com
-Ma Ncc: NCC010, Ten Ncc: Cong ty The Gioi Sach  , Dia chi: An Giang  , So dien thoai: 0902345678  , Gmail: thegioisach@gmail.com
-Ma Ncc: NCC011, Ten Ncc: Nha Cung Cap Minh Tuan  , Dia chi: Binh Dinh  , So dien thoai: 0916345678  , Gmail: minhtuan@gmail.com
-Ma Ncc: NCC012, Ten Ncc: Cong ty Nam Hai  , Dia chi: Thanh Hoa  , So dien thoai: 0923456789  , Gmail: namhai@gmail.com
-Ma Ncc: NCC013, Ten Ncc: Cong ty Tuan Kien  , Dia chi: Vinh Phuc  , So dien thoai: 0932678901  , Gmail: tuankien@gmail.com
-Ma Ncc: NCC014, Ten Ncc: Nha Cung Cap Xanh  , Dia chi: Hue  , So dien thoai: 0941234567  , Gmail: nhacungcapxanh@gmail.com
-Ma Ncc: NCC015, Ten Ncc: Cong ty Hoa Sen  , Dia chi: Binh Thuan  , So dien thoai: 0965487890  , Gmail: hoasen@gmail.com
-Ma Ncc: 1, Ten Ncc: 1   , Dia chi: 1   , So dien thoai: 1   , Gmail: 1
-Ma Ncc: 2, Ten Ncc: 2   , Dia chi: 2   , So dien thoai: 2   , Gmail: 2
-Ma Ncc: 1, Ten Ncc: 1  , Dia chi: 1  , So dien thoai: 1  , Gmail: 1
+Ma Ncc: 1, Ten Ncc: 1 , Dia chi: 1 , So dien thoai: 1 , Gmail: 1
+Ma Ncc: 1, Ten Ncc: 1 , Dia chi: 1 , So dien thoai: 1 , Gmail: 1
 Ma Ncc: NCC001, Ten Ncc: Cong ty TNHH ABC , Dia chi: Ha Noi , So dien thoai: 0123456789 , Gmail: abccorp@gmail.com
 Ma Ncc: NCC002, Ten Ncc: Cong ty Xanh , Dia chi: Da Nang , So dien thoai: 0987654321 , Gmail: xanhco@gmail.com
 Ma Ncc: NCC003, Ten Ncc: Nha Cung Cap A , Dia chi: TP. Ho Chi Minh , So dien thoai: 0901234567 , Gmail: nccA@gmail.com
@@ -83,8 +61,6 @@ Ma Ncc: NCC012, Ten Ncc: Cong ty Nam Hai , Dia chi: Thanh Hoa , So dien thoai: 0
 Ma Ncc: NCC013, Ten Ncc: Cong ty Tuan Kien , Dia chi: Vinh Phuc , So dien thoai: 0932678901 , Gmail: tuankien@gmail.com
 Ma Ncc: NCC014, Ten Ncc: Nha Cung Cap Xanh , Dia chi: Hue , So dien thoai: 0941234567 , Gmail: nhacungcapxanh@gmail.com
 Ma Ncc: NCC015, Ten Ncc: Cong ty Hoa Sen , Dia chi: Binh Thuan , So dien thoai: 0965487890 , Gmail: hoasen@gmail.com
-Ma Ncc: 12, Ten Ncc: 12 , Dia chi: 12 , So dien thoai: 2 , Gmail: 3
-Ma Ncc: 2, Ten Ncc: 2  , Dia chi: 2  , So dien thoai: 2  , Gmail: 2
 Ma Ncc: NCC001, Ten Ncc: Cong ty TNHH ABC  , Dia chi: Ha Noi  , So dien thoai: 0123456789  , Gmail: abccorp@gmail.com
 Ma Ncc: NCC002, Ten Ncc: Cong ty Xanh  , Dia chi: Da Nang  , So dien thoai: 0987654321  , Gmail: xanhco@gmail.com
 Ma Ncc: NCC003, Ten Ncc: Nha Cung Cap A  , Dia chi: TP. Ho Chi Minh  , So dien thoai: 0901234567  , Gmail: nccA@gmail.com
@@ -100,6 +76,22 @@ Ma Ncc: NCC012, Ten Ncc: Cong ty Nam Hai  , Dia chi: Thanh Hoa  , So dien thoai:
 Ma Ncc: NCC013, Ten Ncc: Cong ty Tuan Kien  , Dia chi: Vinh Phuc  , So dien thoai: 0932678901  , Gmail: tuankien@gmail.com
 Ma Ncc: NCC014, Ten Ncc: Nha Cung Cap Xanh  , Dia chi: Hue  , So dien thoai: 0941234567  , Gmail: nhacungcapxanh@gmail.com
 Ma Ncc: NCC015, Ten Ncc: Cong ty Hoa Sen  , Dia chi: Binh Thuan  , So dien thoai: 0965487890  , Gmail: hoasen@gmail.com
-Ma Ncc: 3, Ten Ncc: 3 , Dia chi: 3 , So dien thoai: 3 , Gmail: 3
-Ma Ncc: 2, Ten Ncc: 2   , Dia chi: 2   , So dien thoai: 2   , Gmail: 2
 Ma Ncc: 1, Ten Ncc: 1  , Dia chi: 1  , So dien thoai: 1  , Gmail: 1
+Ma Ncc: NCC001, Ten Ncc: Cong ty TNHH ABC  , Dia chi: Ha Noi  , So dien thoai: 0123456789  , Gmail: abccorp@gmail.com
+Ma Ncc: NCC002, Ten Ncc: Cong ty Xanh  , Dia chi: Da Nang  , So dien thoai: 0987654321  , Gmail: xanhco@gmail.com
+Ma Ncc: NCC003, Ten Ncc: Nha Cung Cap A  , Dia chi: TP. Ho Chi Minh  , So dien thoai: 0901234567  , Gmail: nccA@gmail.com
+Ma Ncc: NCC004, Ten Ncc: Cong ty Thien An  , Dia chi: Hai Phong  , So dien thoai: 0912345678  , Gmail: thienan@gmail.com
+Ma Ncc: NCC005, Ten Ncc: Cong ty Dich Vu Hoan Hao  , Dia chi: Quang Ninh  , So dien thoai: 0123987456  , Gmail: hoanhao@gmail.com
+Ma Ncc: NCC006, Ten Ncc: Xay Dung Bac Nam  , Dia chi: Binh Duong  , So dien thoai: 0908765432  , Gmail: xbnam@gmail.com
+Ma Ncc: NCC007, Ten Ncc: Cong ty Minh Tan  , Dia chi: Quang Ngai  , So dien thoai: 0913765432  , Gmail: minhtan@gmail.com
+Ma Ncc: NCC008, Ten Ncc: Cong ty Quoc Te  , Dia chi: Can Tho  , So dien thoai: 0982345678  , Gmail: quocte@gmail.com
+Ma Ncc: NCC009, Ten Ncc: Thuong Mai 24/7  , Dia chi: Binh Phuoc  , So dien thoai: 0938765432  , Gmail: tm247@gmail.com
+Ma Ncc: NCC010, Ten Ncc: Cong ty The Gioi Sach  , Dia chi: An Giang  , So dien thoai: 0902345678  , Gmail: thegioisach@gmail.com
+Ma Ncc: NCC011, Ten Ncc: Nha Cung Cap Minh Tuan  , Dia chi: Binh Dinh  , So dien thoai: 0916345678  , Gmail: minhtuan@gmail.com
+Ma Ncc: NCC012, Ten Ncc: Cong ty Nam Hai  , Dia chi: Thanh Hoa  , So dien thoai: 0923456789  , Gmail: namhai@gmail.com
+Ma Ncc: NCC013, Ten Ncc: Cong ty Tuan Kien  , Dia chi: Vinh Phuc  , So dien thoai: 0932678901  , Gmail: tuankien@gmail.com
+Ma Ncc: NCC014, Ten Ncc: Nha Cung Cap Xanh  , Dia chi: Hue  , So dien thoai: 0941234567  , Gmail: nhacungcapxanh@gmail.com
+Ma Ncc: NCC015, Ten Ncc: Cong ty Hoa Sen  , Dia chi: Binh Thuan  , So dien thoai: 0965487890  , Gmail: hoasen@gmail.com
+Ma Ncc: 1, Ten Ncc: 1  , Dia chi: 1  , So dien thoai: 1  , Gmail: 1
+Ma Ncc: 1, Ten Ncc: 1  , Dia chi: 1  , So dien thoai: 1  , Gmail: 1
+Ma Ncc: 1, Ten Ncc: 2 , Dia chi: 2 , So dien thoai: 3 , Gmail: 4

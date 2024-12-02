@@ -6,7 +6,6 @@ public class Main_Nv {
         DanhSachNhanVienImpl danhSach = new DanhSachNhanVienImpl();
         Scanner sc = new Scanner(System.in);
 
-        // Doc du lieu tu file (neu co)
         try {
             danhSach.docFile("NhanVien.txt");
         } catch (IOException e) {
@@ -24,16 +23,16 @@ public class Main_Nv {
             System.out.print("Chon: ");
 
             int choice = sc.nextInt();
-            sc.nextLine(); // Doc ky tu newline con lai
+            sc.nextLine();
 
             switch (choice) {
                 case 1:
-                    // Them nhan vien moi
+
                     NhanVien nv = new NhanVien();
-                    nv.nhap(); // Nhap thong tin nhan vien moi
-                    danhSach.themNhanvien(nv); // Them nhan vien vao danh sach
+                    nv.nhap();
+                    danhSach.themNhanvien(nv);
                     try {
-                        danhSach.luuFile("NhanVien.txt"); // Ghi danh sach nhan vien vao file
+                        danhSach.luuFile("NhanVien.txt");
                         System.out.println("Nhan vien da duoc them va luu vao file.");
                     } catch (IOException e) {
                         System.out.println("Loi khi luu nhan vien vao file: " + e.getMessage());
@@ -47,7 +46,7 @@ public class Main_Nv {
                     nvMoi.nhap();
                     danhSach.suaNhanvien(idSua, nvMoi);
                     try {
-                        danhSach.luuFile("NhanVien.txt"); // Luu lai danh sach nhan vien sau khi sua
+                        danhSach.luuFile("NhanVien.txt");
                         System.out.println("Nhan vien da duoc sua va luu vao file.");
                     } catch (IOException e) {
                         System.out.println("Loi khi luu nhan vien vao file: " + e.getMessage());
@@ -59,7 +58,7 @@ public class Main_Nv {
                     String idXoa = sc.nextLine();
                     danhSach.xoaNhanvien(idXoa);
                     try {
-                        danhSach.luuFile("NhanVien.txt"); // Luu lai danh sach nhan vien sau khi xoa
+                        danhSach.luuFile("NhanVien.txt");
                         System.out.println("Nhan vien da duoc xoa va luu vao file.");
                     } catch (IOException e) {
                         System.out.println("Loi khi luu nhan vien vao file: " + e.getMessage());
@@ -88,6 +87,6 @@ public class Main_Nv {
                     break;
             }
         }
-        sc.close();
+    
     }
 }

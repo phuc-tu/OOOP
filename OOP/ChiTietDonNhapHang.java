@@ -57,6 +57,10 @@ public class ChiTietDonNhapHang {
         return tongTien;
     }
 
+    public void setTongTien(double tongTien) {
+        this.tongTien = tongTien;
+    }
+
     public void nhap() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Nhap ma phieu: ");

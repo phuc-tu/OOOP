@@ -24,16 +24,16 @@ public class Main_Kh {
             System.out.print("Chon: ");
 
             int choice = sc.nextInt();
-            sc.nextLine(); // Doc ky tu newline con lai
+            sc.nextLine();
 
             switch (choice) {
                 case 1:
-                    // Them khach hang moi
+
                     KhachHang kh = new KhachHang();
-                    kh.nhap(); // Nhap thong tin khach hang moi
-                    danhSach.themKhachhang(kh); // Them khach hang vao danh sach
+                    kh.nhap();
+                    danhSach.themKhachhang(kh);
                     try {
-                        danhSach.luuFile("KhachHang.txt"); // Ghi danh sach khach hang vao file
+                        danhSach.luuFile("KhachHang.txt");
                         System.out.println("Khach hang da duoc them va luu vao file.");
                     } catch (IOException e) {
                         System.out.println("Loi khi luu khach hang vao file: " + e.getMessage());
@@ -44,10 +44,10 @@ public class Main_Kh {
                     System.out.print("Nhap ma khach hang can sua: ");
                     String idSua = sc.nextLine();
                     KhachHang khMoi = new KhachHang();
-                    khMoi.nhap(); // Nhap thong tin khach hang moi
+                    khMoi.nhap();
                     danhSach.suaKhachhang(idSua, khMoi);
                     try {
-                        danhSach.luuFile("KhachHang.txt"); // Luu lai danh sach khach hang sau khi sua
+                        danhSach.luuFile("KhachHang.txt");
                         System.out.println("Khach hang da duoc sua va luu vao file.");
                     } catch (IOException e) {
                         System.out.println("Loi khi luu khach hang vao file: " + e.getMessage());
@@ -59,7 +59,7 @@ public class Main_Kh {
                     String idXoa = sc.nextLine();
                     danhSach.xoaKhachhang(idXoa);
                     try {
-                        danhSach.luuFile("KhachHang.txt"); // Luu lai danh sach khach hang sau khi xoa
+                        danhSach.luuFile("KhachHang.txt");
                         System.out.println("Khach hang da duoc xoa va luu vao file.");
                     } catch (IOException e) {
                         System.out.println("Loi khi luu khach hang vao file: " + e.getMessage());
@@ -88,6 +88,6 @@ public class Main_Kh {
                     break;
             }
         }
-        sc.close();
+        
     }
 }

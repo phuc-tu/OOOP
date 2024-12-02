@@ -6,7 +6,6 @@ public class Main_Ncc {
         DanhSachNhaCungCapImpl danhSach = new DanhSachNhaCungCapImpl();
         Scanner sc = new Scanner(System.in);
 
-        // Đọc danh sách nhà cung cấp từ file ngay khi chương trình bắt đầu
         danhSach.docFile("NhaCungCap.txt");
 
         boolean exit = false;
@@ -82,6 +81,6 @@ public class Main_Ncc {
                     break;
             }
         }
-        sc.close();
+        
     }
 }

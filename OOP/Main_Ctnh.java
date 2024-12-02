@@ -6,7 +6,6 @@ public class Main_Ctnh {
         DanhSachChiTietDonNhapHangImpl danhSach = new DanhSachChiTietDonNhapHangImpl();
         Scanner scanner = new Scanner(System.in);
 
-        // Đọc danh sách từ file khi khởi động
         danhSach.docFile("ChiTietDonNhapHang.txt");
 
         boolean running = true;
@@ -20,10 +19,10 @@ public class Main_Ctnh {
             System.out.println("6. Thoat");
             System.out.print("Chon: ");
             int choice = scanner.nextInt();
-            scanner.nextLine(); // Đọc bỏ ký tự xuống dòng sau khi nhập số
+            scanner.nextLine();
 
             switch (choice) {
-                case 1: // Thêm chi tiết đơn nhập hàng
+                case 1:
                     ChiTietDonNhapHang ctnh = new ChiTietDonNhapHang();
                     ctnh.nhap();
                     danhSach.themChiTietDonNhapHang(ctnh);
@@ -36,7 +35,7 @@ public class Main_Ctnh {
                     }
                     break;
 
-                case 2: // Sửa chi tiết đơn nhập hàng
+                case 2:
                     System.out.print("Nhap ma phieu nhap hang can sua: ");
                     String maPnSua = scanner.nextLine();
                     ChiTietDonNhapHang ctnhMoi = new ChiTietDonNhapHang(); // Sửa
@@ -52,7 +51,7 @@ public class Main_Ctnh {
                     }
                     break;
 
-                case 3: // Xóa chi tiết đơn nhập hàng
+                case 3:
                     System.out.print("Nhap ma phieu nhap hang can xoa: ");
                     String maPnXoa = scanner.nextLine();
                     danhSach.xoaChiTietDonNhapHang(maPnXoa);
@@ -65,18 +64,18 @@ public class Main_Ctnh {
                     }
                     break;
 
-                case 4: // Tìm chi tiết đơn nhập hàng
+                case 4:
                     System.out.print("Nhap ma phieu nhap hang can tim: ");
                     String maPnTim = scanner.nextLine();
                     ChiTietDonNhapHang ketQua = danhSach.timChiTietDonNhapHang(maPnTim);
                     System.out.println(ketQua != null ? ketQua : "Khong tim thay chi tiet voi ma nay.");
                     break;
 
-                case 5: // Hiển thị danh sách chi tiết đơn nhập hàng
+                case 5:
                     danhSach.hienThiDonChiTietNhapHang();
                     break;
 
-                case 6: // Thoát chương trình
+                case 6:
                     running = false;
                     System.out.println("Chuong trinh ket thuc.");
                     break;
@@ -86,6 +85,5 @@ public class Main_Ctnh {
             }
         }
 
-        scanner.close();
     }
 }

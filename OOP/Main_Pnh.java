@@ -88,6 +88,6 @@ public class Main_Pnh {
                     break;
             }
         }
-        sc.close();
+        
     }
 }

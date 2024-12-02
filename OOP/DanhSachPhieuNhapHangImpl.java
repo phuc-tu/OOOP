@@ -14,7 +14,7 @@ public class DanhSachPhieuNhapHangImpl implements DanhSachPhieuNhapHang {
         if (soLuongPhieu < danhSachPhieu.length) {
             danhSachPhieu[soLuongPhieu++] = phieu;
         } else {
-            System.out.println("Danh sách phiếu đã đầy, không thể thêm.");
+            System.out.println("Danh sach da day day,ko the them");
         }
     }
 
@@ -23,11 +23,11 @@ public class DanhSachPhieuNhapHangImpl implements DanhSachPhieuNhapHang {
         for (int i = 0; i < soLuongPhieu; i++) {
             if (danhSachPhieu[i] != null && danhSachPhieu[i].getMaPhieu().equals(maPhieu)) {
                 danhSachPhieu[i] = phieuMoi;
-                System.out.println("Sửa phiếu thành công.");
+                System.out.println("Sua phieu nhap thanh cong.");
                 return;
             }
         }
-        System.out.println("Không tìm thấy phiếu có mã: " + maPhieu);
+        System.out.println("Khong tim thay phieu: " + maPhieu);
     }
 
     @Override
@@ -38,11 +38,11 @@ public class DanhSachPhieuNhapHangImpl implements DanhSachPhieuNhapHang {
                     danhSachPhieu[j] = danhSachPhieu[j + 1];
                 }
                 danhSachPhieu[--soLuongPhieu] = null;
-                System.out.println("Xóa phiếu thành công.");
+                System.out.println("Xoa phieu thanh cong");
                 return;
             }
         }
-        System.out.println("Không tìm thấy phiếu có mã: " + maPhieu);
+        System.out.println("Khong tim thay phieu voi ma " + maPhieu);
     }
 
     @Override
@@ -52,14 +52,14 @@ public class DanhSachPhieuNhapHangImpl implements DanhSachPhieuNhapHang {
                 return danhSachPhieu[i];
             }
         }
-        System.out.println("Không tìm thấy phiếu có mã: " + maPhieu);
+        System.out.println("Ko tim thay phieu voi ma" + maPhieu);
         return null;
     }
 
     @Override
     public void hienThiPhieu() {
         if (soLuongPhieu == 0) {
-            System.out.println("Danh sách phiếu trống.");
+            System.out.println("Danh sach phieu trong");
         } else {
             for (int i = 0; i < soLuongPhieu; i++) {
                 System.out.println(danhSachPhieu[i]);
@@ -67,7 +67,6 @@ public class DanhSachPhieuNhapHangImpl implements DanhSachPhieuNhapHang {
         }
     }
 
-    // Lưu danh sách phiếu nhập vào file
     public void luuFile(String filename) throws IOException {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filename))) {
             for (int i = 0; i < soLuongPhieu; i++) {
@@ -79,7 +78,6 @@ public class DanhSachPhieuNhapHangImpl implements DanhSachPhieuNhapHang {
         }
     }
 
-    // Đọc danh sách phiếu nhập từ file
     public void docFile(String filename) throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader(filename));
         String line;

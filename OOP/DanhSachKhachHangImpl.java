@@ -5,7 +5,7 @@ public class DanhSachKhachHangImpl implements DanhSachKhachHang {
     private int soLuongKhachHang;
 
     public DanhSachKhachHangImpl() {
-        this.danhSachKhachHang = new KhachHang[100]; 
+        this.danhSachKhachHang = new KhachHang[100];
         this.soLuongKhachHang = 0;
     }
 
@@ -33,11 +33,11 @@ public class DanhSachKhachHangImpl implements DanhSachKhachHang {
     public void xoaKhachhang(String id) {
         for (int i = 0; i < soLuongKhachHang; i++) {
             if (danhSachKhachHang[i] != null && danhSachKhachHang[i].getId().equals(id)) {
-                
+
                 for (int j = i; j < soLuongKhachHang - 1; j++) {
                     danhSachKhachHang[j] = danhSachKhachHang[j + 1];
                 }
-                danhSachKhachHang[--soLuongKhachHang] = null; 
+                danhSachKhachHang[--soLuongKhachHang] = null;
                 return;
             }
         }
@@ -67,19 +67,17 @@ public class DanhSachKhachHangImpl implements DanhSachKhachHang {
         }
     }
 
-    
     public void luuFile(String filename) throws IOException {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filename))) {
             for (int i = 0; i < soLuongKhachHang; i++) {
                 if (danhSachKhachHang[i] != null) {
                     writer.write(danhSachKhachHang[i].toString());
-                    writer.newLine(); 
+                    writer.newLine();
                 }
             }
         }
     }
 
-    
     public void docFile(String filename) throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader(filename));
         String line;
@@ -94,9 +92,9 @@ public class DanhSachKhachHangImpl implements DanhSachKhachHang {
                     String gender = fields[2].split(": ")[1];
                     String address = fields[3].split(": ")[1];
                     String id = fields[4].split(": ")[1];
-                    String phoneNumber = fields[5].split(": ")[1];
+                    String sdt = fields[5].split(": ")[1];
 
-                    KhachHang kh = new KhachHang(name, age, gender, address, id, phoneNumber);
+                    KhachHang kh = new KhachHang(name, age, gender, address, id, sdt);
                     themKhachhang(kh);
                 } catch (Exception e) {
                     System.out.println("Loi khi doc dong: " + line);

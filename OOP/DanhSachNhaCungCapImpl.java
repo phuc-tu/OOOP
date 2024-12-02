@@ -56,24 +56,31 @@ public class DanhSachNhaCungCapImpl implements DanhSachNhaCungCap {
 
     @Override
     public void hienThiNhaCungCap() {
-        // Đọc và hiển thị danh sách từ file
-        try (BufferedReader reader = new BufferedReader(new FileReader("NhaCungCap.txt"))) {
-            String line;
-            System.out.println("Danh sach nha cung cap:");
-            while ((line = reader.readLine()) != null) {
-                System.out.println(line); // Hiển thị từng dòng trong file
+        if (soLuongNhaCungCap == 0) {
+            System.out.println(" Danh sach trong:");
+        } else {
+            for (int i = 0; i < soLuongNhaCungCap; i++) {
+                System.out.println(danhSachNhaCungCap[i]);
             }
-        } catch (IOException e) {
-            System.out.println("Loi khi doc file: " + e.getMessage());
+
         }
 
-        // Hiển thị danh sách trong bộ nhớ hiện tại (những nhà cung cấp đã thêm)
-        for (int i = 0; i < soLuongNhaCungCap; i++) {
-            System.out.println(danhSachNhaCungCap[i]);
-        }
+        // try (BufferedReader reader = new BufferedReader(new
+        // FileReader("NhaCungCap.txt"))) {
+        // String line;
+        // System.out.println("Danh sach nha cung cap:");
+        // while ((line = reader.readLine()) != null) {
+        // System.out.println(line);
+        // }
+        // } catch (IOException e) {
+        // System.out.println("Loi khi doc file: " + e.getMessage());
+        // }
+
+        // for (int i = 0; i < soLuongNhaCungCap; i++) {
+        // System.out.println(danhSachNhaCungCap[i]);
+        // }
     }
 
-    // Lưu danh sách vào file (append, không ghi đè)
     public void luuFile(String filename) throws IOException {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filename, true))) { // Append mode
             for (int i = 0; i < soLuongNhaCungCap; i++) {
@@ -85,7 +92,6 @@ public class DanhSachNhaCungCapImpl implements DanhSachNhaCungCap {
         }
     }
 
-    // Đọc danh sách từ file và lưu vào bộ nhớ
     public void docFile(String filename) throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader(filename));
         String line;

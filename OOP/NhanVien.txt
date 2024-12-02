@@ -1,11 +1,10 @@
-Ten: Nguyen A, Tuoi: 25, Gioi tinh: Nam, Dia chi: Hà Nội, Ma nhan vien: NV001, Chuc vu: Nhân viên, Luong: 5000000.0
-Ten: Le B, Tuoi: 30, Gioi tinh: Nữ, Dia chi: TP. HCM, Ma nhan vien: NV002, Chuc vu: Quản lý, Luong: 8000000.0
-Ten: Tran C, Tuoi: 28, Gioi tinh: Nam, Dia chi: Đà Nẵng, Ma nhan vien: NV003, Chuc vu: Nhân viên, Luong: 6000000.0
-Ten: Pham D, Tuoi: 35, Gioi tinh: Nữ, Dia chi: Bình Dương, Ma nhan vien: NV004, Chuc vu: Nhân viên, Luong: 5500000.0
-Ten: Hoang E, Tuoi: 26, Gioi tinh: Nam, Dia chi: Hà Nội, Ma nhan vien: NV005, Chuc vu: Quản lý, Luong: 9000000.0
-Ten: Nguyen F, Tuoi: 40, Gioi tinh: Nữ, Dia chi: TP. HCM, Ma nhan vien: NV006, Chuc vu: Nhân viên, Luong: 6500000.0
-Ten: Le G, Tuoi: 29, Gioi tinh: Nam, Dia chi: Đà Nẵng, Ma nhan vien: NV007, Chuc vu: Nhân viên, Luong: 5800000.0
-Ten: Tran H, Tuoi: 33, Gioi tinh: Nữ, Dia chi: Bình Dương, Ma nhan vien: NV008, Chuc vu: Nhân viên, Luong: 5600000.0
-Ten: Pham I, Tuoi: 27, Gioi tinh: Nam, Dia chi: Hà Nội, Ma nhan vien: NV009, Chuc vu: Nhân viên, Luong: 5100000.0
-Ten: Hoang J, Tuoi: 32, Gioi tinh: Nữ, Dia chi: TP. HCM, Ma nhan vien: NV010, Chuc vu: Quản lý, Luong: 7500000.0
-Ten: 1, Tuoi: 1, Gioi tinh: 1, Dia chi: 1, Ma nhan vien: 1, Chuc vu: 1, Luong: 1.0
+Ten: Nguyen A, Tuoi: 25, Gioi tinh: Nam, Dia chi: Ha Noi, Ma nhan vien: NV001, Chuc vu: Nhan vien, Luong: 5000000.0  
+Ten: Le B, Tuoi: 30, Gioi tinh: Nu, Dia chi: TP. HCM, Ma nhan vien: NV002, Chuc vu: Quan ly, Luong: 8000000.0  
+Ten: Tran C, Tuoi: 28, Gioi tinh: Nam, Dia chi: Da Nang, Ma nhan vien: NV003, Chuc vu: Nhan vien, Luong: 6000000.0  
+Ten: Pham D, Tuoi: 35, Gioi tinh: Nu, Dia chi: Binh Duong, Ma nhan vien: NV004, Chuc vu: Nhan vien, Luong: 5500000.0  
+Ten: Hoang E, Tuoi: 26, Gioi tinh: Nam, Dia chi: Ha Noi, Ma nhan vien: NV005, Chuc vu: Quan ly, Luong: 9000000.0  
+Ten: Nguyen F, Tuoi: 40, Gioi tinh: Nu, Dia chi: TP. HCM, Ma nhan vien: NV006, Chuc vu: Nhan vien, Luong: 6500000.0  
+Ten: Le G, Tuoi: 29, Gioi tinh: Nam, Dia chi: Da Nang, Ma nhan vien: NV007, Chuc vu: Nhan vien, Luong: 5800000.0  
+Ten: Tran H, Tuoi: 33, Gioi tinh: Nu, Dia chi: Binh Duong, Ma nhan vien: NV008, Chuc vu: Nhan vien, Luong: 5600000.0  
+Ten: Pham I, Tuoi: 27, Gioi tinh: Nam, Dia chi: Ha Noi, Ma nhan vien: NV009, Chuc vu: Nhan vien, Luong: 5100000.0  
+Ten: Hoang J, Tuoi: 32, Gioi tinh: Nu, Dia chi: TP. HCM, Ma nhan vien: NV010, Chuc vu: Quan ly, Luong: 7500000.0  

@@ -33,11 +33,11 @@ public class DanhSachNhanVienImpl implements DanhSachNhanVien {
     public void xoaNhanvien(String id) {
         for (int i = 0; i < soLuongNhanVien; i++) {
             if (danhSachNhanVien[i] != null && danhSachNhanVien[i].getId().equals(id)) {
-                // Doi cac phan tu sau len de "xoa" phan tu
+
                 for (int j = i; j < soLuongNhanVien - 1; j++) {
                     danhSachNhanVien[j] = danhSachNhanVien[j + 1];
                 }
-                danhSachNhanVien[--soLuongNhanVien] = null; // Giam so luong nhan vien
+                danhSachNhanVien[--soLuongNhanVien] = null;
                 return;
             }
         }
@@ -85,7 +85,6 @@ public class DanhSachNhanVienImpl implements DanhSachNhanVien {
 
         while ((line = reader.readLine()) != null) {
             String[] fields = line.split(", ");
-
             if (fields.length >= 7) {
                 try {
                     String name = fields[0].split(": ")[1];
@@ -105,6 +104,6 @@ public class DanhSachNhanVienImpl implements DanhSachNhanVien {
                 System.out.println("Dong du lieu khong day du: " + line);
             }
         }
-        reader.close();
+
     }
 }
