@@ -1,0 +1,30 @@
+Sneaker,101,Nike Air Max,10,2000000,Red,Leather,5,42,High,Running
+Cao_got,201,Giày cao gót Gucci,5,1500000,Black,Suede,4,38,Pointed,10
+Sneaker,102,Adidas Ultraboost,8,2500000,White,Synthetic,6,43,Low,Walking
+Cao_got,202,Louboutin Classic,3,5000000,Red,Leather,3,37,Round,12
+Sneaker,103,Converse Chuck Taylor,12,900000,Blue,Canvas,2,41,Low,Casual
+Cao_got,203,Zara High Heel,7,1100000,Beige,Faux Leather,5,39,Block,8
+Sneaker,104,Puma RS-X,15,1800000,Yellow,Synthetic,4,42,High,Sports
+Cao_got,204,Charles & Keith,10,1300000,Green,Leather,3,38,Kitten,7
+Sneaker,105,New Balance 574,20,1700000,Gray,Synthetic,5,40,Low,Lifestyle
+Cao_got,205,Jimmy Choo Bella,4,6000000,Silver,Leather,4,36,Stiletto,10
+Sneaker,106,Reebok Classic,14,1400000,Black,Leather,3,43,Low,Fitness
+Cao_got,206,Prada Pumps,2,8000000,Gold,Suede,3,37,Pointed,11
+Sneaker,107,Under Armour Charged,9,1600000,Green,Synthetic,4,42,High,Running
+Cao_got,207,Versace Barocco,3,10000000,Black,Leather,5,38,Block,9
+Sneaker,108,Asics Gel Nimbus,6,3000000,White,Synthetic,6,44,Low,Marathon
+Cao_got,208,Aldo Classic,8,1200000,Pink,Faux Leather,4,39,Stiletto,8
+Sneaker,109,Mizuno Wave Rider,10,2000000,Blue,Synthetic,5,41,High,Running
+Cao_got,209,H&M High Heel,12,900000,White,Faux Leather,3,37,Block,7
+Sneaker,110,Jordan Retro 1,7,3500000,Red,Leather,5,42,High,Basketball
+Cao_got,210,Bata Formal Heels,15,800000,Black,Leather,4,39,Kitten,6
+Sneaker,111,On Cloud,5,2200000,Gray,Synthetic,6,43,Low,Fitness
+Cao_got,211,Steve Madden,4,2000000,Brown,Faux Leather,3,38,Pointed,9
+Sneaker,112,Skechers GoWalk,20,1200000,Black,Fabric,3,41,Low,Casual
+Cao_got,212,Guess Classic,9,2500000,Red,Suede,4,36,Round,10
+Sneaker,113,Brooks Ghost,8,2700000,White,Synthetic,5,44,Low,Running
+Cao_got,213,Nine West Pumps,6,1900000,Gold,Leather,4,37,Stiletto,11
+Sneaker,114,Merrell Trail Glove,7,1500000,Green,Synthetic,2,42,Low,Trail
+Cao_got,214,Topshop Heels,10,1100000,Beige,Faux Leather,3,39,Block,8
+Sneaker,115,Salomon Speedcross,5,3000000,Blue,Synthetic,4,43,Low,Outdoor
+Cao_got,215,Mango High Heel,8,1000000,Pink,Leather,3,38,Pointed,7

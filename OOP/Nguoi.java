@@ -1,17 +1,14 @@
 import java.util.Scanner;
 
-// Lớp trừu tượng Nguoi
 public abstract class Nguoi {
     private String ten;
     private int tuoi;
     private String gioiTinh;
     private String diaChi;
 
-    // Constructor mặc định
     public Nguoi() {
     }
 
-    // Constructor có tham số
     public Nguoi(String ten, int tuoi, String gioiTinh, String diaChi) {
         this.ten = ten;
         this.tuoi = tuoi;
@@ -19,7 +16,6 @@ public abstract class Nguoi {
         this.diaChi = diaChi;
     }
 
-    // Getter và Setter
     public String getTen() {
         return ten;
     }
@@ -52,7 +48,6 @@ public abstract class Nguoi {
         this.diaChi = diaChi;
     }
 
-    // Phương thức nhập thông tin cơ bản
     public void nhap() {
         Scanner sc = new Scanner(System.in);
 
@@ -61,7 +56,7 @@ public abstract class Nguoi {
 
         System.out.print("Nhap tuoi: ");
         this.tuoi = sc.nextInt();
-        sc.nextLine(); // Đọc ký tự xuống dòng còn lại
+        sc.nextLine();
 
         System.out.print("Nhap gioi tinh: ");
         this.gioiTinh = sc.nextLine();
@@ -74,6 +69,5 @@ public abstract class Nguoi {
         return "Ten: " + ten + ", Tuoi: " + tuoi + ", Gioi tinh: " + gioiTinh + ", Dia chi: " + diaChi;
     }
 
-    // Phương thức trừu tượng hiển thị thông tin
     public abstract void hienThiThongTin();
 }
