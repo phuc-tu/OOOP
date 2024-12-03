@@ -54,6 +54,28 @@ public class DanhSachNhanVienImpl implements DanhSachNhanVien {
         return null;
     }
 
+    public NhanVien[] timTenNhanvienGanDung(String tenGanDung) {
+        String tenCanTim = tenGanDung.toLowerCase();
+        NhanVien[] ketQuaTam = new NhanVien[soLuongNhanVien];
+        int soLuongKetQua = 0;
+
+        for (int i = 0; i < soLuongNhanVien; i++) {
+            if (danhSachNhanVien[i] != null) {
+                String tenNhanVien = danhSachNhanVien[i].getTen().toLowerCase();
+                if (tenNhanVien.contains(tenCanTim)) {
+                    ketQuaTam[soLuongKetQua++] = danhSachNhanVien[i];
+                }
+            }
+        }
+
+        NhanVien[] ketQuaChinhThuc = new NhanVien[soLuongKetQua];
+        for (int i = 0; i < soLuongKetQua; i++) {
+            ketQuaChinhThuc[i] = ketQuaTam[i];
+        }
+
+        return ketQuaChinhThuc;
+    }
+
     @Override
     public void hienThiNhanvien() {
         if (soLuongNhanVien == 0) {

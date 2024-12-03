@@ -14,20 +14,26 @@ public class Main_Nv {
 
         boolean exit = false;
         while (!exit) {
-            System.out.println("\n1. Them nhan vien (va luu vao file)");
+            System.out.println("\n========== QUAN LY NHAN VIEN ==========");
+            System.out.println("1. Them nhan vien (va luu vao file)");
             System.out.println("2. Sua nhan vien");
             System.out.println("3. Xoa nhan vien");
-            System.out.println("4. Tim nhan vien");
-            System.out.println("5. Hien thi danh sach nhan vien");
-            System.out.println("6. Thoat");
+            System.out.println("4. Tim nhan vien theo ma");
+            System.out.println("5. Tim nhan vien gan dung theo ten");
+            System.out.println("6. Hien thi danh sach nhan vien");
+            System.out.println("7. Thoat");
             System.out.print("Chon: ");
 
-            int choice = sc.nextInt();
-            sc.nextLine();
+            int choice;
+            try {
+                choice = Integer.parseInt(sc.nextLine());
+            } catch (NumberFormatException e) {
+                System.out.println("Vui long nhap so hop le.");
+                continue;
+            }
 
             switch (choice) {
                 case 1:
-
                     NhanVien nv = new NhanVien();
                     nv.nhap();
                     danhSach.themNhanvien(nv);
@@ -73,20 +79,35 @@ public class Main_Nv {
                     break;
 
                 case 5:
+                    System.out.print("Nhap ten gan dung can tim: ");
+                    String tenGanDung = sc.nextLine();
+                    NhanVien[] ketQuaTam = danhSach.timTenNhanvienGanDung(tenGanDung);
+                    if (ketQuaTam.length > 0) {
+                        System.out.println("Ket qua tim kiem:");
+                        for (NhanVien nvGanDung : ketQuaTam) {
+                            if (nvGanDung != null) {
+                                System.out.println(nvGanDung);
+                            }
+                        }
+                    } else {
+                        System.out.println("Khong tim thay nhan vien co ten gan dung voi '" + tenGanDung + "'.");
+                    }
+                    break;
+
+                case 6:
                     System.out.println("Danh sach nhan vien:");
                     danhSach.hienThiNhanvien();
                     break;
 
-                case 6:
+                case 7:
                     exit = true;
                     System.out.println("Chuong trinh ket thuc.");
                     break;
 
                 default:
-                    System.out.println("Lua chon khong hop le.");
+                    System.out.println("Lua chon khong hop le. Vui long chon lai.");
                     break;
             }
         }
-    
     }
 }
