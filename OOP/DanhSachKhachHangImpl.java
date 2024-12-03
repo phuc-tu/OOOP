@@ -11,6 +11,13 @@ public class DanhSachKhachHangImpl implements DanhSachKhachHang {
 
     @Override
     public void themKhachhang(KhachHang kh) {
+        for (int i = 0; i < soLuongKhachHang; i++) {
+            if (danhSachKhachHang[i] != null && danhSachKhachHang[i].getId().equals(kh.getId())) {
+                System.out.println("Khach hang voi ma " + kh.getId() + " da ton tai trong danh sach. Khong the them.");
+                return;
+            }
+        }
+
         if (soLuongKhachHang < danhSachKhachHang.length) {
             danhSachKhachHang[soLuongKhachHang++] = kh;
         } else {

@@ -11,10 +11,18 @@ public class DanhSachPhieuNhapHangImpl implements DanhSachPhieuNhapHang {
 
     @Override
     public void themPhieu(PhieuNhapHang phieu) {
+        for (int i = 0; i < soLuongPhieu; i++) {
+            if (danhSachPhieu[i] != null && danhSachPhieu[i].getMaPhieu().equals(phieu.getMaPhieu())) {
+                System.out
+                        .println("Phieu voi ma " + phieu.getMaPhieu() + " da ton tai trong danh sach. Khong the them.");
+                return;
+            }
+        }
+
         if (soLuongPhieu < danhSachPhieu.length) {
             danhSachPhieu[soLuongPhieu++] = phieu;
         } else {
-            System.out.println("Danh sach da day day,ko the them");
+            System.out.println("Danh sach phieu da day, khong the them.");
         }
     }
 

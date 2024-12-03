@@ -12,10 +12,18 @@ public class DanhSachNhaCungCapImpl implements DanhSachNhaCungCap {
 
     @Override
     public void themNhaCungCap(NhaCungCap ncc) {
+        for (int i = 0; i < soLuongNhaCungCap; i++) {
+            if (danhSachNhaCungCap[i] != null && danhSachNhaCungCap[i].getMaNcc().equals(ncc.getMaNcc())) {
+                System.out.println(
+                        "Nha cung cap voi ma " + ncc.getMaNcc() + " da ton tai trong danh sach. Khong the them.");
+                return;
+            }
+        }
+
         if (soLuongNhaCungCap < danhSachNhaCungCap.length) {
             danhSachNhaCungCap[soLuongNhaCungCap++] = ncc;
         } else {
-            System.out.println("Danh sach nha cung cap da day.");
+            System.out.println("Danh sach nha cung cap da day, khong the them.");
         }
     }
 

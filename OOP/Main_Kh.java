@@ -15,6 +15,8 @@ public class Main_Kh {
 
         boolean exit = false;
         while (!exit) {
+            System.out.println("=======QUAN LI KHACH HANG=====");
+            System.out.println("_________________________________-");
             System.out.println("\n1. Them khach hang (va luu vao file)");
             System.out.println("2. Sua khach hang");
             System.out.println("3. Xoa khach hang");
@@ -88,6 +90,6 @@ public class Main_Kh {
                     break;
             }
         }
-        
+
     }
 }

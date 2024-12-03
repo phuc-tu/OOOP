@@ -12,10 +12,17 @@ public class DanhSachChiTietDonNhapHangImpl implements DanhSachChiTietDonNhapHan
 
     @Override
     public void themChiTietDonNhapHang(ChiTietDonNhapHang ctnh) {
+        for (int i = 0; i < soLuongChiTiet; i++) {
+            if (danhSachChiTiet[i] != null && danhSachChiTiet[i].getMaPn().equals(ctnh.getMaPn())) {
+                System.out.println("Chi tiet don nhap hang voi ma " + ctnh.getMaPn()
+                        + " da ton tai trong danh sach. Khong the them.");
+                return;
+            }
+        }
         if (soLuongChiTiet < danhSachChiTiet.length) {
             danhSachChiTiet[soLuongChiTiet++] = ctnh;
         } else {
-            System.out.println("Danh sach chi tiet don nhap hang da day.");
+            System.out.println("Danh sach chi tiet don nhap hang da day, khong the them.");
         }
     }
 

@@ -11,6 +11,13 @@ public class DanhSachNhanVienImpl implements DanhSachNhanVien {
 
     @Override
     public void themNhanvien(NhanVien nv) {
+        for (int i = 0; i < soLuongNhanVien; i++) {
+            if (danhSachNhanVien[i] != null && danhSachNhanVien[i].getId().equals(nv.getId())) {
+                System.out.println("Nhan vien voi ma " + nv.getId() + " da ton tai trong danh sach. Khong the them.");
+                return;
+            }
+        }
+
         if (soLuongNhanVien < danhSachNhanVien.length) {
             danhSachNhanVien[soLuongNhanVien++] = nv;
         } else {

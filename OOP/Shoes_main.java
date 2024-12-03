@@ -7,7 +7,8 @@ public class Shoes_main {
         Scanner sc = new Scanner(System.in);
         boolean exit = false;
         while (!exit) {
-            System.out.println("----CHUONG TRINH QUAN LI----- ");
+            System.out.println("============CHUONG TRINH QUAN LI============ ");
+            System.out.println("_______________________________________________");
             System.out.println("1.Quan li san pham;");
             System.out.println("2. Quan li nhan vien:");
             System.out.println("3. Quan li khach hang:");
@@ -18,7 +19,7 @@ public class Shoes_main {
             System.out.println("8.Quan li chi tiet hoa don:");
             System.out.println("9.Thong ke");
             System.out.println("0. Thoat chuong trinh");
-
+            System.out.println("Chon: ");
             int chon = sc.nextInt();
 
             switch (chon) {
