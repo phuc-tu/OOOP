@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class DanhSachSanPham implements IsanPham {
-    private static sanpham[] sp = new sanpham[0];
+    private static sanpham[] sp = new sanpham[100];
     Scanner sc = new Scanner(System.in);
     int length;
 
@@ -155,8 +155,16 @@ public class DanhSachSanPham implements IsanPham {
     }
 
     public void showDs() {
-        for (sanpham sp1 : sp) {
-            sp1.xuat();
+        if (sp == null || sp.length == 0) {
+            System.out.println("Danh sach trong.");
+        } else {
+            for (sanpham sp1 : sp) {
+                if (sp1 != null) {
+                    sp1.xuat();
+                } else {
+                    System.out.println("San pham trong danh sach.");
+                }
+            }
         }
     }
 
@@ -264,7 +272,7 @@ public class DanhSachSanPham implements IsanPham {
             System.out.println("4. Nhap them san pham");
             System.out.println("5. Tim san pham theo ten");
             System.out.println("6. Tim san pham gan dung ten");
-            System.out.println("7. Thoát");
+            System.out.println("0. Thoát");
             System.out.print("Nhap lua chon: ");
             choice = sc.nextInt();
             switch (choice) {

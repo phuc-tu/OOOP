@@ -148,7 +148,7 @@ public class DanhSachChiTietDonNH implements IchiTietHoaDon {
             System.out.println("2. Hien danh sach chi tiet hoa don");
             System.out.println("3. Xoa chi tiet don hang");
             System.out.println("4.Them chi tiet");
-            System.out.println("5.thoat");
+            System.out.println("0.Thoat");
             choice = sc.nextInt();
             switch (choice) {
                 case 1:
@@ -163,13 +163,13 @@ public class DanhSachChiTietDonNH implements IchiTietHoaDon {
                 case 4:
                     nhapthem(ds1);
                     break;
-                case 5:
-                    System.out.println("Thoát chương trình.");
+                case 0:
+                    System.out.println("Thoat chuong trinh.");
                     break;
                 default:
-                    System.out.println("Lựa chọn không hợp lệ.");
+                    System.out.println("Lua  chon khong hop le.");
             }
-        } while (choice != 5);
+        } while (choice != 4);
     }
 
 }

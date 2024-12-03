@@ -10,3 +10,4 @@ Ten: Pham I, Tuoi: 27, Gioi tinh: Nam, Dia chi: Ha Noi, Ma nhan vien: NV009, Chu
 Ten: Hoang J, Tuoi: 32, Gioi tinh: Nu, Dia chi: TP. HCM, Ma nhan vien: NV010, Chuc vu: Quan ly, Luong: 7500000.0
 Ten: 1, Tuoi: 1, Gioi tinh: 1, Dia chi: 1, Ma nhan vien: 1, Chuc vu: 1, Luong: 1.0
 Ten: tu, Tuoi: 12, Gioi tinh: NU, Dia chi: 1, Ma nhan vien: 1, Chuc vu: 1, Luong: 1.0
+Ten: 1, Tuoi: 1, Gioi tinh: 1, Dia chi: 1, Ma nhan vien: 1, Chuc vu: 1, Luong: 1.0
