@@ -16,12 +16,12 @@ public class DanhSachHoaDon {
 
     // Hàm đọc file
     public void docFile(String filePath) {
-        DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("yyyy-M-d"); // Định dạng ngày tháng
+        DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("yyyy-M-d");
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
             String line;
             while ((line = br.readLine()) != null) {
-                String[] parts = line.split(","); // Tách dữ liệu theo dấu phẩy
-                if (parts.length == 5) { // Đảm bảo có đủ 5 phần tử: MaHD, MaNV, MaKH, Ngay, TongTien
+                String[] parts = line.split(",");
+                if (parts.length == 5) {
                     int maHD = Integer.parseInt(parts[0].trim());
                     int maNV = Integer.parseInt(parts[1].trim());
                     int maKH = Integer.parseInt(parts[2].trim());
@@ -46,13 +46,12 @@ public class DanhSachHoaDon {
     public void ghiFile(String filePath) {
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(filePath))) {
             for (HoaDon hd1 : dshd) {
-                // Ghi thông tin sản phẩm vào file, cách nhau bởi dấu phẩy
                 bw.write(hd1.getMaHD() + "," +
                         hd1.getMaKH() + "," +
                         hd1.getMaNV() + "," +
                         hd1.getNgayin() + "," +
                         hd1.getTongtien());
-                bw.newLine(); // Xuống dòng sau mỗi sản phẩm
+                bw.newLine();
             }
             System.out.println("Ghi file thanh cong!");
         } catch (IOException e) {
@@ -121,20 +120,17 @@ public class DanhSachHoaDon {
 
     public void xoa() {
         System.out.println("Nhap ma san pham can xoa: ");
-        int id = sc.nextInt(); // Nhập mã sản phẩm cần xóa
+        int id = sc.nextInt();
         boolean found = false;
 
-        // Duyệt qua danh sách để tìm sản phẩm cần xóa
         for (int i = 0; i < dshd.length; i++) {
             if (dshd[i].getMaHD() == id) {
                 found = true;
 
-                // Dịch các phần tử sau vị trí cần xóa lên một vị trí
                 for (int j = i; j < dshd.length - 1; j++) {
                     dshd[j] = dshd[j + 1];
                 }
 
-                // Giảm kích thước mảng và loại bỏ phần tử cuối
                 dshd = Arrays.copyOf(dshd, dshd.length - 1);
                 System.out.println("da xoa hoa don: " + id);
                 break;
@@ -147,7 +143,7 @@ public class DanhSachHoaDon {
     }
 
     public void sua() {
-        System.out.println("nhap vao ma hoa don can sua");
+        System.out.println("Nhap vao ma hoa don can sua");
         int id = sc.nextInt();
         HoaDon hd = FindID(id);
         if (hd != null) {
@@ -161,19 +157,19 @@ public class DanhSachHoaDon {
                 }
             }
             if (exist) {
-                System.out.println("ma hoa don da ton tai");
+                System.out.println("Ma hoa don da ton tai");
                 return;
             }
-            System.out.println("nhap vao ma khach hang:");
+            System.out.println("Nhap vao ma khach hang:");
             hd.setMaKH(sc.nextInt());
-            System.out.println("nhap vao ma nhan vien:");
+            System.out.println("Nhap vao ma nhan vien:");
             hd.setMaNV(sc.nextInt());
-            System.out.println("nhap vao ngay lap:");
-            System.out.println("nhap ngay");
+            System.out.println("Nhap vao ngay lap:");
+            System.out.println("Nhap ngay");
             int ngay = sc.nextInt();
-            System.out.println("nhap thang");
+            System.out.println("Nhap thang");
             int thang = sc.nextInt();
-            System.out.println("nhap nam");
+            System.out.println("Nhap nam");
             int nam = sc.nextInt();
             hd.setNgayin(ngay, thang, nam);
         }
@@ -209,10 +205,10 @@ public class DanhSachHoaDon {
                 quy4++;
             }
         }
-        System.out.println("so hoa don trong quy 1 :" + quy1);
-        System.out.println("so hoa don trong quy 2 :" + quy2);
-        System.out.println("so hoa don trong quy 3 :" + quy3);
-        System.out.println("so hoa don trong quy 4 : " + quy4);
+        System.out.println("So hoa don trong quy 1 :" + quy1);
+        System.out.println("So hoa don trong quy 2 :" + quy2);
+        System.out.println("So hoa don trong quy 3 :" + quy3);
+        System.out.println("So hoa don trong quy 4 : " + quy4);
     }
 
     public void choose(DanhSachChiTietDonNH ds1) {
@@ -220,13 +216,13 @@ public class DanhSachHoaDon {
         do {
             System.out.println("\n1. Tao danh sach hoa don");
             System.out.println("2. Hien thi danh sach san pham");
-            System.out.println("3. Xoa san pham");
-            System.out.println("4. sua");
-            System.out.println("5.tinh tong trong khoang thoi gian");
-            System.out.println("6.them");
-            System.out.println("7. thong ke cac quy:");
+            System.out.println("3. Xoa san pham ");
+            System.out.println("4. Sua thong tin san pham");
+            System.out.println("5. Tinh tong trong khoang thoi gian");
+            System.out.println("6. Them ");
+            System.out.println("7. Thong ke cac quy:");
             System.out.println("8. Thoat");
-            System.out.print("Nhập lựa chọn: ");
+            System.out.print("NhAP  lua chon: ");
             choice = sc.nextInt();
             switch (choice) {
                 case 1:
@@ -260,7 +256,7 @@ public class DanhSachHoaDon {
                         start = LocalDate.of(nam, thang, ngay);
                         end = LocalDate.of(nam1, thang1, ngay1);
                     } catch (DateTimeException e) {
-                        System.out.println("Lỗi ngày tháng nhập vào không hợp lệ: " + e.getMessage());
+                        System.out.println("Loi ngya thang khong hop le: " + e.getMessage());
                         return;
                     }
                     System.out.println(" tong: " + TongMonth(start, end));
@@ -272,10 +268,10 @@ public class DanhSachHoaDon {
                     tkquy();
                     break;
                 case 8:
-                    System.out.println("Thoát chương trình.");
+                    System.out.println("Thoat chuon trinh");
                     break;
                 default:
-                    System.out.println("Lựa chọn không hợp lệ.");
+                    System.out.println("Lua chon khong hop le");
             }
         } while (choice != 8);
     }

@@ -176,13 +176,13 @@ public class DanhSachSanPham implements IsanPham {
                 }
 
                 sp = Arrays.copyOf(sp, sp.length - 1);
-                System.out.println("Đã xóa sản phẩm có mã: " + id);
+                System.out.println("Da xoa san pham: " + id);
                 break;
             }
         }
 
         if (!found) {
-            System.out.println("Không tìm thấy sản phẩm với mã: " + id);
+            System.out.println("Khong tim thay san pham: " + id);
         }
     }
 
@@ -220,7 +220,7 @@ public class DanhSachSanPham implements IsanPham {
     }
 
     public void TimTheoTen() {
-        System.out.println("nhap vao  ten sinh vien can tim: ");
+        System.out.println("nhap vao  ten san pham can tim: ");
         String ten = sc.nextLine();
 
         String[] DanhSachTen = new String[sp.length];
@@ -228,11 +228,11 @@ public class DanhSachSanPham implements IsanPham {
             DanhSachTen[i] = sp[i].getTensp();
         }
         int index = Arrays.asList(DanhSachTen).indexOf(ten);
-        System.out.println("ten sinh vien tim thay: ");
+        System.out.println("Ten san pham tim thay: ");
         if (index != -1) {
             sp[index].xuat();
         } else {
-            System.out.println("khong tim thay");
+            System.out.println("Khong tim thay");
             sc.nextLine();
         }
     }
@@ -286,13 +286,13 @@ public class DanhSachSanPham implements IsanPham {
                 case 6:
                     timGanDungTen();
                     break;
-                case 7:
-                    System.out.println("Thoát chương trình.");
+                case 0:
+                    System.out.println("Thoat chuong trinh");
                     break;
                 default:
-                    System.out.println("Lựa chọn không hợp lệ.");
+                    System.out.println("Vui long nhap lai.");
             }
-        } while (choice != 7);
+        } while (choice != 6);
     }
 
 }

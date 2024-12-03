@@ -67,6 +67,8 @@ public class DanhSachKhachHangImpl implements DanhSachKhachHang {
         }
     }
 
+    // Thống kê
+
     public void luuFile(String filename) throws IOException {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filename))) {
             for (int i = 0; i < soLuongKhachHang; i++) {
@@ -89,7 +91,7 @@ public class DanhSachKhachHangImpl implements DanhSachKhachHang {
                 try {
                     String name = fields[0].split(": ")[1];
                     int age = Integer.parseInt(fields[1].split(": ")[1]);
-                    String gender = fields[2].split(": ")[1];
+                    String gender = fields[2].split(": ")[1].trim();
                     String address = fields[3].split(": ")[1];
                     String id = fields[4].split(": ")[1];
                     String sdt = fields[5].split(": ")[1];
@@ -105,4 +107,5 @@ public class DanhSachKhachHangImpl implements DanhSachKhachHang {
         }
         reader.close();
     }
+
 }
