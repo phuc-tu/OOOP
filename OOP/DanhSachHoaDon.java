@@ -12,7 +12,7 @@ import java.util.Scanner;
 
 public class DanhSachHoaDon {
     Scanner sc = new Scanner(System.in);
-    private static HoaDon[] dshd = new HoaDon[0];
+    private static HoaDon[] dshd = new HoaDon[100];
 
     // Hàm đọc file
     public void docFile(String filePath) {
@@ -219,9 +219,9 @@ public class DanhSachHoaDon {
             System.out.println("3. Xoa san pham ");
             System.out.println("4. Sua thong tin san pham");
             System.out.println("5. Tinh tong trong khoang thoi gian");
-            System.out.println("6. Them ");
+            System.out.println("6. Them San pham ");
             System.out.println("7. Thong ke cac quy:");
-            System.out.println("8. Thoat");
+            System.out.println("0. Thoat");
             System.out.print("NhAP  lua chon: ");
             choice = sc.nextInt();
             switch (choice) {
@@ -256,7 +256,7 @@ public class DanhSachHoaDon {
                         start = LocalDate.of(nam, thang, ngay);
                         end = LocalDate.of(nam1, thang1, ngay1);
                     } catch (DateTimeException e) {
-                        System.out.println("Loi ngya thang khong hop le: " + e.getMessage());
+                        System.out.println("Loi ngay thang khong hop le: " + e.getMessage());
                         return;
                     }
                     System.out.println(" tong: " + TongMonth(start, end));
@@ -267,8 +267,8 @@ public class DanhSachHoaDon {
                 case 7:
                     tkquy();
                     break;
-                case 8:
-                    System.out.println("Thoat chuon trinh");
+                case 0:
+                    System.out.println("Thoat chuong trinh");
                     break;
                 default:
                     System.out.println("Lua chon khong hop le");
