@@ -1,4 +1,3 @@
-import java.io.File;
 
 public class Main_Cthd {
 
@@ -6,16 +5,14 @@ public class Main_Cthd {
 
         DanhSachSanPham danhSachSanPham = new DanhSachSanPham();
 
-        String sanPhamFilePath = "sanpham.txt";
-        danhSachSanPham.docFile(sanPhamFilePath);
+    
+        danhSachSanPham.docFile("./OOP/sanpham.txt");
 
         DanhSachChiTietDonNH danhSachChiTietDonNH = new DanhSachChiTietDonNH();
-
-        String chiTietHoaDonFilePath = "chitiethoadon.txt";
-        danhSachChiTietDonNH.docFile(chiTietHoaDonFilePath);
+        danhSachChiTietDonNH.docFile("./OOP/chitiethoadon.txt");
 
         danhSachChiTietDonNH.choose(danhSachSanPham);
 
-        danhSachChiTietDonNH.ghiFile(chiTietHoaDonFilePath);
+        danhSachChiTietDonNH.ghiFile("./OOP/chitiethoadon.txt");
     }
 }

@@ -5,7 +5,7 @@ public class Main_Tk {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int soNam = 0, soNu = 0;
-        String filePath = "NhanVien.txt";
+        String filePath = "OOP/NhanVien.txt";
         int choice;
 
         do {

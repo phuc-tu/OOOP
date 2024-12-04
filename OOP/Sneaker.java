@@ -32,4 +32,12 @@ public class Sneaker extends sanpham {
     System.out.println("Ung dung : "+this.ungdung);
 
    }
+   public String getCogiay() {
+      return coGiay;}
+   public void setCogiay(String coGiay) {
+      this.coGiay = coGiay;}
+      public String getUngdung() {
+         return ungdung;}
+         public void setUngdung(String ungdung) {
+            this.ungdung = ungdung;}
 }

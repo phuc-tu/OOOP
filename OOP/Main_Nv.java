@@ -7,7 +7,7 @@ public class Main_Nv {
         Scanner sc = new Scanner(System.in);
 
         try {
-            danhSach.docFile("NhanVien.txt");
+            danhSach.docFile("OOP/NhanVien.txt");
         } catch (IOException e) {
             System.out.println("Loi khi doc file: " + e.getMessage());
         }

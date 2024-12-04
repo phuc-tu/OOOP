@@ -7,9 +7,8 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class DanhSachSanPham implements IsanPham {
-    private static sanpham[] sp = new sanpham[100];
+    private static sanpham[] sp = new sanpham[0];
     Scanner sc = new Scanner(System.in);
-    int length;
 
     public int check(int id) {
         for (sanpham sp1 : sp) {
@@ -134,25 +133,47 @@ public class DanhSachSanPham implements IsanPham {
         }
     }
 
+  
     public void ghiFile(String filePath) {
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(filePath))) {
             for (sanpham sp1 : sp) {
-
-                bw.write(sp1.getMaSP() + "," +
-                        sp1.getTensp() + "," +
-                        sp1.getSl() + "," +
-                        sp1.getDongia() + "," +
-                        sp1.getMau() + "," +
-                        sp1.getChatlieu() + "," +
-                        sp1.getDodayde() + "," +
-                        sp1.getSize());
-                bw.newLine();
+                if (sp1 instanceof Sneaker) {
+                    // Ghi dữ liệu Sneaker
+                    Sneaker sneaker = (Sneaker) sp1;
+                    bw.write("Sneaker," +
+                             sneaker.getMaSP() + "," +
+                             sneaker.getTensp() + "," +
+                             sneaker.getSl() + "," +
+                             sneaker.getDongia() + "," +
+                             sneaker.getMau() + "," +
+                             sneaker.getChatlieu() + "," +
+                             sneaker.getDodayde() + "," +
+                             sneaker.getSize() + "," +
+                             sneaker.getCogiay() + "," +
+                             sneaker.getUngdung());
+                } else if (sp1 instanceof CaoGot) {
+                    // Ghi dữ liệu Cao_got
+                    CaoGot caoGot = (CaoGot) sp1;
+                    bw.write("Cao_got," +
+                             caoGot.getMaSP() + "," +
+                             caoGot.getTensp() + "," +
+                             caoGot.getSl() + "," +
+                             caoGot.getDongia() + "," +
+                             caoGot.getMau() + "," +
+                             caoGot.getChatlieu() + "," +
+                             caoGot.getDodayde() + "," +
+                             caoGot.getSize() + "," +
+                             caoGot.getKieugot() + "," +
+                             caoGot.getDecao());
+                }
+                bw.newLine(); // Xuống dòng sau mỗi sản phẩm
             }
-            System.out.println("Ghi file thanh cong!");
+            System.out.println("Ghi file thành công!");
         } catch (IOException e) {
-            System.out.println("Loi khi doc file " + e.getMessage());
+            System.out.println("Lỗi khi ghi file: " + e.getMessage());
         }
     }
+    
 
     public void showDs() {
         if (sp == null || sp.length == 0) {

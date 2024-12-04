@@ -101,33 +101,43 @@ public class DanhSachChiTietDonNH implements IchiTietHoaDon {
         }
         return s;
     }
+    public void Timkiem(){
+        int id;
+        System.out.println("Nhap vao ma hoa don:");
+        id = sc.nextInt();
+        int kq = FindMHD(id);
+        for(ChiTietHoaDon ct : ds){
+      if(ct.getMaHD()==kq)
+        ct.xuat(); 
+}
+}      public void xoa() {
+    System.out.println("nhap vao maHD can xoa:");
+    int id1 = sc.nextInt();
+    System.out.println("Nhap ma san pham  can xoa: ");
+    int id = sc.nextInt(); // Nhập mã sản phẩm cần xóa
+    boolean found = false;
 
-    public void xoa() {
-        System.out.println("Nhap ma san pham can xoa: ");
-        int id = sc.nextInt(); // Nhập mã sản phẩm cần xóa
-        boolean found = false;
+    // Duyệt qua danh sách để tìm sản phẩm cần xóa
+    for (int i = 0; i < ds.length; i++) {
+        if (ds[i].getMaHD() == id1&&ds[i].getMaSP()==id) {
+            found = true;
 
-        // Duyệt qua danh sách để tìm sản phẩm cần xóa
-        for (int i = 0; i < ds.length; i++) {
-            if (ds[i].getMaHD() == id) {
-                found = true;
-
-                // Dịch các phần tử sau vị trí cần xóa lên một vị trí
-                for (int j = i; j < ds.length - 1; j++) {
-                    ds[j] = ds[j + 1];
-                }
-
-                // Giảm kích thước mảng và loại bỏ phần tử cuối
-                ds = Arrays.copyOf(ds, ds.length - 1);
-                System.out.println("da xoa hoa don: " + id);
-                break;
+            // Dịch các phần tử sau vị trí cần xóa lên một vị trí
+            for (int j = i; j < ds.length - 1; j++) {
+                ds[j] = ds[j + 1];
             }
-        }
 
-        if (!found) {
-            System.out.println("Không tìm thấy sản phẩm với mã: " + id);
+            // Giảm kích thước mảng và loại bỏ phần tử cuối
+            ds = Arrays.copyOf(ds, ds.length - 1);
+            System.out.println("da xoa hoa don: " + id);
+            break;
         }
     }
+
+    if (!found) {
+        System.out.println("Không tìm thấy sản phẩm với mã: " + id);
+    }
+}
 
     public void nhapthem(DanhSachSanPham sp) {
         int n;
@@ -148,6 +158,7 @@ public class DanhSachChiTietDonNH implements IchiTietHoaDon {
             System.out.println("2. Hien danh sach chi tiet hoa don");
             System.out.println("3. Xoa chi tiet don hang");
             System.out.println("4.Them chi tiet");
+            System.out.println("5.In ra cac san pham cung qua don");
             System.out.println("0.Thoat");
             choice = sc.nextInt();
             switch (choice) {
@@ -162,6 +173,9 @@ public class DanhSachChiTietDonNH implements IchiTietHoaDon {
                     break;
                 case 4:
                     nhapthem(ds1);
+                    break;
+                case 5:
+                    Timkiem();
                     break;
                 case 0:
                     System.out.println("Thoat chuong trinh.");

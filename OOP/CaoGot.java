@@ -36,4 +36,16 @@ public class CaoGot extends sanpham {
         System.out.println("Kieu got :" + this.kieugot);
         System.out.println("De cao :" + this.decao);
     }
+    public String getKieugot() {
+        return kieugot;
+    }
+    public void setKieugot(String kieugot) {
+        this.kieugot = kieugot;
+        }
+        public int getDecao() {
+            return decao;
+            }
+            public void setDecao(int decao) {
+                this.decao = decao;
+                }
 }

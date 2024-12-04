@@ -1,4 +1,3 @@
-import java.io.File;
 
 public class Main_Sp {
 
@@ -6,10 +5,9 @@ public class Main_Sp {
 
         DanhSachSanPham danhSachSanPham = new DanhSachSanPham();
 
-        String filePath = "sanpham.txt";
 
         danhSachSanPham.choose();
 
-        danhSachSanPham.ghiFile(filePath);
+        danhSachSanPham.ghiFile("OOP/sanpham.txt");
     }
 }
