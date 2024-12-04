@@ -9,7 +9,8 @@ public class Main_Tk {
         int choice;
 
         do {
-            System.out.println("---------------------");
+            System.out.println("====THONG KE NHAN VIEN======");
+            System.out.println("_____________________________");
             System.out.println("1. Thong ke nhan vien");
             System.out.println("0. Thoat chuong trinh");
 
@@ -50,6 +51,5 @@ public class Main_Tk {
             }
         } while (choice != 0);
 
-        sc.close();
     }
 }
