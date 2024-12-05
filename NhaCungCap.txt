@@ -1,0 +1,11 @@
+Ma Ncc: NCC001, Ten Ncc: Cong ty TNHH ABC , Dia chi: Ha Noi , So dien thoai: 0123456789 , Gmail: abccorp@gmail.com
+Ma Ncc: NCC002, Ten Ncc: Cong ty Xanh , Dia chi: Da Nang , So dien thoai: 0987654321 , Gmail: xanhco@gmail.com
+Ma Ncc: NCC003, Ten Ncc: Nha Cung Cap A , Dia chi: TP. Ho Chi Minh , So dien thoai: 0901234567 , Gmail: nccA@gmail.com
+Ma Ncc: NCC004, Ten Ncc: Cong ty Thien An , Dia chi: Hai Phong , So dien thoai: 0912345678 , Gmail: thienan@gmail.com
+Ma Ncc: NCC005, Ten Ncc: Cong ty Dich Vu Hoan Hao , Dia chi: Quang Ninh , So dien thoai: 0123987456 , Gmail: hoanhao@gmail.com
+Ma Ncc: NCC006, Ten Ncc: Xay Dung Bac Nam , Dia chi: Binh Duong , So dien thoai: 0908765432 , Gmail: xbnam@gmail.com
+Ma Ncc: NCC007, Ten Ncc: Cong ty Minh Tan , Dia chi: Quang Ngai , So dien thoai: 0913765432 , Gmail: minhtan@gmail.com
+Ma Ncc: NCC008, Ten Ncc: Cong ty Quoc Te , Dia chi: Can Tho , So dien thoai: 0982345678 , Gmail: quocte@gmail.com
+Ma Ncc: NCC009, Ten Ncc: Thuong Mai 24/7 , Dia chi: Binh Phuoc , So dien thoai: 0938765432 , Gmail: tm247@gmail.com
+Ma Ncc: NCC010, Ten Ncc: Cong ty The Gioi Sach , Dia chi: An Giang , So dien thoai: 0902345678 , Gmail: thegioisach@gmail.com
+Ma Ncc: 1, Ten Ncc: 1 , Dia chi: 11 , So dien thoai:  , Gmail: 1

@@ -1,12 +1,11 @@
 import java.io.IOException;
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Shoes_main {
     public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
-        boolean exit = false;
-        while (!exit) {
+        int chon;
+        do {
             System.out.println("============CHUONG TRINH QUAN LI============ ");
             System.out.println("_______________________________________________");
             System.out.println("1.Quan li san pham;");
@@ -20,7 +19,7 @@ public class Shoes_main {
             System.out.println("9.Thong ke");
             System.out.println("0. Thoat chuong trinh");
             System.out.println("Chon: ");
-            int chon = sc.nextInt();
+            chon = sc.nextInt();
 
             switch (chon) {
                 case 1:
@@ -50,12 +49,15 @@ public class Shoes_main {
                 case 9:
                     Main_Tk.main(new String[] {});
                     break;
+                case 0:
+                System.out.println("thoat chuong trinh");
+                  break;
                 default:
                     System.out.println("Lua chon khong hop le. Moi ban nhap lai.");
                     break;
             }
 
-        }
+        } while(chon!=0);
         sc.close();
 
     }

@@ -229,24 +229,17 @@ public class DanhSachSanPham implements IsanPham {
     }
 
     @Override
-    public int FindID(int id1) {
-        sort();
-        int l = 0;
-        int r = sp.length - 1;
-        sort();
-        while (l <= r) {
-            int mid = (l + r) / 2;
-            if (sp[mid].getMaSP() == id1) {
-                return sp[mid].getDongia();
-
-            } else if (sp[mid].getMaSP() < id1) {
-                l = mid + 1;
-            } else {
-                r = mid - 1;
+    public int FindID(int maSP) {
+        for (sanpham sp : sp)  { // Giả sử danhSachSanPham là danh sách các sản phẩm
+            if (sp.getMaSP() == maSP) {
+                return sp.getDongia(); // Trả về đơn giá
             }
         }
-        return 0;
+        // Nếu không tìm thấy
+        System.out.println("Không tìm thấy mã sản phẩm: " + maSP);
+        return 0; // Có thể trả về -1 để phân biệt lỗi rõ ràng hơn
     }
+    
 
     public void TimTheoTen() {
         System.out.println("nhap vao  ten san pham can tim: ");
@@ -321,7 +314,7 @@ public class DanhSachSanPham implements IsanPham {
                 default:
                     System.out.println("Vui long nhap lai.");
             }
-        } while (choice != 6);
+        } while (choice != 0);
     }
 
 }

@@ -9,7 +9,7 @@ public class Main_Cthd {
         danhSachSanPham.docFile("./OOP/sanpham.txt");
 
         DanhSachChiTietDonNH danhSachChiTietDonNH = new DanhSachChiTietDonNH();
-        danhSachChiTietDonNH.docFile("./OOP/chitiethoadon.txt");
+        danhSachChiTietDonNH.docFile("./OOP/chitiethoadon.txt",danhSachSanPham);
 
         danhSachChiTietDonNH.choose(danhSachSanPham);
 

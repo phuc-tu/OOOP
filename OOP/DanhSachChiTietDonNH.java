@@ -12,34 +12,54 @@ public class DanhSachChiTietDonNH implements IchiTietHoaDon {
     Scanner sc = new Scanner(System.in);
 
     // Hàm đọc file
-    public void docFile(String filePath) {
+    public void docFile(String filePath, DanhSachSanPham danhSachSanPham) {
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
             String line;
             while ((line = br.readLine()) != null) {
-                String[] parts = line.split(","); // Tách dữ liệu theo dấu phẩy
-                if (parts.length == 4) { // Đảm bảo có đủ 3 phần tử: MaHD, MaSP, SoLuong
-                    int maHD = Integer.parseInt(parts[0].trim());
-                    int maSP = Integer.parseInt(parts[1].trim());
-                    int soLuong = Integer.parseInt(parts[2].trim());
-                    int Thanhtien = Integer.parseInt(parts[3].trim());
-
-                    // Tạo đối tượng chitiethoadon
-                    ChiTietHoaDon ct = new ChiTietHoaDon();
-                    ct.setMaHD(maHD);
-                    ct.setMaSP(maSP);
-                    ct.setSoluong(soLuong);
-                    ct.setThanhtien(Thanhtien); // Tính tiền dựa trên thông tin sản phẩm
-                    // Thêm vào mảng ds
-                    ds = Arrays.copyOf(ds, ds.length + 1);
-                    ds[ds.length - 1] = ct;
+                // Bỏ qua các dòng trống
+                if (line.trim().isEmpty()) continue;
+    
+                // Tách dữ liệu theo dấu phẩy
+                String[] parts = line.split(",");
+                if (parts.length >= 3) { // Đảm bảo ít nhất 3 phần tử: MaHD, MaSP, SoLuong
+                    try {
+                        int maHD = Integer.parseInt(parts[0].trim());
+                        int maSP = Integer.parseInt(parts[1].trim());
+                        int soLuong = Integer.parseInt(parts[2].trim());
+    
+                        // Lấy đơn giá từ danh sách sản phẩm
+                        int donGia = danhSachSanPham.FindID(maSP);
+    
+                        // Tạo đối tượng ChiTietHoaDon
+                        ChiTietHoaDon chiTietHoaDon = new ChiTietHoaDon();
+                        chiTietHoaDon.setMaHD(maHD);
+                        chiTietHoaDon.setMaSP(maSP);
+                        chiTietHoaDon.setSoluong(soLuong);
+                        chiTietHoaDon.setDongia(donGia);
+    
+                        // Tính thành tiền nếu đơn giá hợp lệ
+                        if (donGia > 0) {
+                            chiTietHoaDon.setThanhtien(soLuong * donGia);
+                        } else {
+                            chiTietHoaDon.setThanhtien(0); // Nếu không tìm thấy giá
+                        }
+    
+                        // Thêm vào danh sách
+                        ds = Arrays.copyOf(ds, ds.length + 1);
+                        ds[ds.length - 1] = chiTietHoaDon;
+                    } catch (NumberFormatException e) {
+                        System.out.println("Lỗi định dạng dòng: " + line);
+                    }
+                } else {
+                    System.out.println("Dòng không hợp lệ: " + line);
                 }
             }
+            System.out.println("Đọc file thành công!");
         } catch (IOException e) {
             System.out.println("Lỗi khi đọc file: " + e.getMessage());
-        } catch (NumberFormatException e) {
-            System.out.println("Lỗi định dạng dữ liệu: " + e.getMessage());
         }
     }
+    
 
     public void ghiFile(String filePath) {
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(filePath))) {
@@ -93,9 +113,9 @@ public class DanhSachChiTietDonNH implements IchiTietHoaDon {
 
     @Override
     public double tongtien(int MaHD) {
-        int s = 0;
+        double s = 0;
         for (ChiTietHoaDon d : ds) {
-            if (MaHD == d.getMaHD()) {
+            if (d.getMaHD()==MaHD) {
                 s = s + d.getThanhtien();
             }
         }

@@ -27,4 +27,4 @@ Cao_got,213,Nine West Pumps,6,1900000,Gold,Leather,4,37,Stiletto,11
 Sneaker,114,Merrell Trail Glove,7,1500000,Green,Synthetic,2,42,Low,Trail
 Cao_got,214,Topshop Heels,10,1100000,Beige,Faux Leather,3,39,Block,8
 Sneaker,115,Salomon Speedcross,5,3000000,Blue,Synthetic,4,43,Low,Outdoor
-Cao_got,215,Mango High Heel,8,1000000,Pink,Leather,3,38,Pointed,7
+Sneaker,999,nike,10,1000,hong,vai,10,34,low,chay

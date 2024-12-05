@@ -1,5 +1,4 @@
 import java.io.*;
-import java.util.Scanner;
 
 public class DanhSachNhaCungCapImpl implements DanhSachNhaCungCap {
     private NhaCungCap[] danhSachNhaCungCap;

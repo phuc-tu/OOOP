@@ -8,7 +8,7 @@ public class Main_Kh {
 
         // Doc du lieu tu file (neu co)
         try {
-            danhSach.docFile("KhachHang.txt");
+            danhSach.docFile("OOP/KhachHang.txt");
         } catch (IOException e) {
             System.out.println("Loi khi doc File: " + e.getMessage());
         }
@@ -35,7 +35,7 @@ public class Main_Kh {
                     kh.nhap();
                     danhSach.themKhachhang(kh);
                     try {
-                        danhSach.luuFile("KhachHang.txt");
+                        danhSach.luuFile("OOP/KhachHang.txt");
                         System.out.println("Khach hang da duoc them va luu vao file.");
                     } catch (IOException e) {
                         System.out.println("Loi khi luu khach hang vao file: " + e.getMessage());
@@ -49,7 +49,7 @@ public class Main_Kh {
                     khMoi.nhap();
                     danhSach.suaKhachhang(idSua, khMoi);
                     try {
-                        danhSach.luuFile("KhachHang.txt");
+                        danhSach.luuFile("OOP/KhachHang.txt");
                         System.out.println("Khach hang da duoc sua va luu vao file.");
                     } catch (IOException e) {
                         System.out.println("Loi khi luu khach hang vao file: " + e.getMessage());
@@ -61,7 +61,7 @@ public class Main_Kh {
                     String idXoa = sc.nextLine();
                     danhSach.xoaKhachhang(idXoa);
                     try {
-                        danhSach.luuFile("KhachHang.txt");
+                        danhSach.luuFile("OOP/KhachHang.txt");
                         System.out.println("Khach hang da duoc xoa va luu vao file.");
                     } catch (IOException e) {
                         System.out.println("Loi khi luu khach hang vao file: " + e.getMessage());

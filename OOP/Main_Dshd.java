@@ -3,13 +3,14 @@ public class Main_Dshd {
     public static void main(String[] args) {
         DanhSachHoaDon danhSachHoaDon = new DanhSachHoaDon();
 
-        String hoaDonFilePath = "hoadon.txt";
-        danhSachHoaDon.docFile(hoaDonFilePath);
 
+        DanhSachSanPham ds = new DanhSachSanPham();
+        ds.docFile("OOP/sanpham.txt");
         DanhSachChiTietDonNH danhSachChiTietDonNH = new DanhSachChiTietDonNH();
-
+        danhSachChiTietDonNH.docFile("OOP/chitiethoadon.txt",ds);
+        danhSachHoaDon.docFile("OOP/hoaddon.txt",danhSachChiTietDonNH);
         danhSachHoaDon.choose(danhSachChiTietDonNH);
 
-        danhSachHoaDon.ghiFile(hoaDonFilePath);
+        danhSachHoaDon.ghiFile("OOP/hoaddon.txt");
     }
 }

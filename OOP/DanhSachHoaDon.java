@@ -12,25 +12,27 @@ import java.util.Scanner;
 
 public class DanhSachHoaDon {
     Scanner sc = new Scanner(System.in);
-    private static HoaDon[] dshd = new HoaDon[100];
+    private static HoaDon[] dshd = new HoaDon[0];
 
     // Hàm đọc file
-    public void docFile(String filePath) {
+    public void docFile(String filePath, DanhSachChiTietDonNH ds) {
         DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("yyyy-M-d");
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
             String line;
             while ((line = br.readLine()) != null) {
                 String[] parts = line.split(",");
-                if (parts.length == 5) {
+                if (parts.length == 4) {
                     int maHD = Integer.parseInt(parts[0].trim());
                     int maNV = Integer.parseInt(parts[1].trim());
                     int maKH = Integer.parseInt(parts[2].trim());
                     LocalDate ngayin = LocalDate.parse(parts[3].trim(), dateFormatter);
-                    double tongtien = Double.parseDouble(parts[4].trim());
-
-                    // Tạo đối tượng hoadon
+    
+                    // Tính tổng tiền từ DanhSachChiTietDonNH
+                    double tongtien = ds.tongtien(maHD);  // Calling tongtien method from DanhSachChiTietDonNH
+    
+                    // Tạo đối tượng HoaDon
                     HoaDon hd = new HoaDon(maHD, maNV, maKH, ngayin, tongtien);
-
+    
                     // Thêm vào mảng dshd
                     dshd = Arrays.copyOf(dshd, dshd.length + 1);
                     dshd[dshd.length - 1] = hd;
@@ -40,9 +42,11 @@ public class DanhSachHoaDon {
             System.out.println("Loi khi doc file: " + e.getMessage());
         } catch (NumberFormatException e) {
             System.out.println("Loi dinh dang du lieu: " + e.getMessage());
+        } catch (DateTimeException e) {
+            System.out.println("Loi dinh dang ngay thang: " + e.getMessage());
         }
     }
-
+    
     public void ghiFile(String filePath) {
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(filePath))) {
             for (HoaDon hd1 : dshd) {

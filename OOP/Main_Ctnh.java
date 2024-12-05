@@ -6,7 +6,7 @@ public class Main_Ctnh {
         DanhSachChiTietDonNhapHangImpl danhSach = new DanhSachChiTietDonNhapHangImpl();
         Scanner scanner = new Scanner(System.in);
 
-        danhSach.docFile("ChiTietDonNhapHang.txt");
+        danhSach.docFile("OOP/ChiTietDonNhapHang.txt");
 
         boolean running = true;
 
@@ -28,7 +28,7 @@ public class Main_Ctnh {
                     danhSach.themChiTietDonNhapHang(ctnh);
 
                     try {
-                        danhSach.luuFile("ChiTietDonNhapHang.txt");
+                        danhSach.luuFile("OOP/ChiTietDonNhapHang.txt");
                         System.out.println("Chi tiet don nhap hang da duoc them va luu vao file.");
                     } catch (IOException e) {
                         System.out.println("Loi khi luu chi tiet don nhap hang vao file: " + e.getMessage());
@@ -44,7 +44,7 @@ public class Main_Ctnh {
                     danhSach.suaChiTietDonNhapHang(ctnhMoi, maPnSua);
 
                     try {
-                        danhSach.luuFile("ChiTietDonNhapHang.txt");
+                        danhSach.luuFile("OOP/ChiTietDonNhapHang.txt");
                         System.out.println("Chi tiet don nhap hang da duoc sua va luu vao file.");
                     } catch (IOException e) {
                         System.out.println("Loi khi luu chi tiet don nhap hang vao file: " + e.getMessage());
@@ -57,7 +57,7 @@ public class Main_Ctnh {
                     danhSach.xoaChiTietDonNhapHang(maPnXoa);
 
                     try {
-                        danhSach.luuFile("ChiTietDonNhapHang.txt");
+                        danhSach.luuFile("OOP/ChiTietDonNhapHang.txt");
                         System.out.println("Chi tiet don nhap hang da duoc xoa va luu vao file.");
                     } catch (IOException e) {
                         System.out.println("Loi khi luu chi tiet don nhap hang vao file: " + e.getMessage());

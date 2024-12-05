@@ -6,7 +6,7 @@ public class Main_Ncc {
         DanhSachNhaCungCapImpl danhSach = new DanhSachNhaCungCapImpl();
         Scanner sc = new Scanner(System.in);
 
-        danhSach.docFile("NhaCungCap.txt");
+        danhSach.docFile("OOP/NhaCungCap.txt");
 
         boolean exit = false;
         while (!exit) {
@@ -27,7 +27,7 @@ public class Main_Ncc {
                     ncc.nhap();
                     danhSach.themNhaCungCap(ncc);
                     try {
-                        danhSach.luuFile("NhaCungCap.txt");
+                        danhSach.luuFile("OOP/NhaCungCap.txt");
                         System.out.println("Nha cung cap da duoc them va luu vao file.");
                     } catch (IOException e) {
                         System.out.println("Loi khi luu nha cung cap vao file: " + e.getMessage());
@@ -41,7 +41,7 @@ public class Main_Ncc {
                     nccMoi.nhap();
                     danhSach.suaNhaCungCap(maSua, nccMoi);
                     try {
-                        danhSach.luuFile("NhaCungCap.txt");
+                        danhSach.luuFile("OOP/NhaCungCap.txt");
                         System.out.println("Nha cung cap da duoc sua va luu vao file.");
                     } catch (IOException e) {
                         System.out.println("Loi khi luu nha cung cap vao file: " + e.getMessage());
@@ -53,7 +53,7 @@ public class Main_Ncc {
                     String maXoa = sc.nextLine();
                     danhSach.xoaNhaCungCap(maXoa);
                     try {
-                        danhSach.luuFile("NhaCungCap.txt");
+                        danhSach.luuFile("OOP/NhaCungCap.txt");
                         System.out.println("Nha cung cap da duoc xoa va luu vao file.");
                     } catch (IOException e) {
                         System.out.println("Loi khi luu nha cung cap vao file: " + e.getMessage());

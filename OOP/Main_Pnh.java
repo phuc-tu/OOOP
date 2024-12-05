@@ -8,7 +8,7 @@ public class Main_Pnh {
 
         // Doc du lieu tu file (neu co)
         try {
-            danhSach.docFile("PhieuNhap.txt");
+            danhSach.docFile("OOP/PhieuNhap.txt");
         } catch (IOException e) {
             System.out.println("Loi khi doc file: " + e.getMessage());
         }
@@ -33,7 +33,7 @@ public class Main_Pnh {
                     phieu.nhap(); // Nhap thong tin phieu nhap moi
                     danhSach.themPhieu(phieu); // Them phieu nhap vao danh sach
                     try {
-                        danhSach.luuFile("PhieuNhap.txt"); // Ghi danh sach phieu nhap vao file
+                        danhSach.luuFile("OOP/PhieuNhap.txt"); // Ghi danh sach phieu nhap vao file
                         System.out.println("Phieu nhap da duoc them va luu vao file.");
                     } catch (IOException e) {
                         System.out.println("Loi khi luu phieu nhap vao file: " + e.getMessage());
@@ -47,7 +47,7 @@ public class Main_Pnh {
                     phieuMoi.nhap();
                     danhSach.suaPhieu(maSua, phieuMoi);
                     try {
-                        danhSach.luuFile("PhieuNhap.txt"); // Luu lai danh sach phieu nhap sau khi sua
+                        danhSach.luuFile("OOP/PhieuNhap.txt"); // Luu lai danh sach phieu nhap sau khi sua
                         System.out.println("Phieu nhap da duoc sua va luu vao file.");
                     } catch (IOException e) {
                         System.out.println("Loi khi luu phieu nhap vao file: " + e.getMessage());
@@ -59,7 +59,7 @@ public class Main_Pnh {
                     String maXoa = sc.nextLine();
                     danhSach.xoaPhieu(maXoa);
                     try {
-                        danhSach.luuFile("PhieuNhap.txt"); // Luu lai danh sach phieu nhap sau khi xoa
+                        danhSach.luuFile("OOP/PhieuNhap.txt"); // Luu lai danh sach phieu nhap sau khi xoa
                         System.out.println("Phieu nhap da duoc xoa va luu vao file.");
                     } catch (IOException e) {
                         System.out.println("Loi khi luu phieu nhap vao file: " + e.getMessage());

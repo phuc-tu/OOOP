@@ -7,7 +7,7 @@ public class HoaDon implements IhoaDon {
     private int MaNV;
     private int MaKH;
     private LocalDate ngayin;
-    private double tongtien;
+    private double  tongtien;
 
     public HoaDon() {
     };
@@ -89,7 +89,7 @@ public class HoaDon implements IhoaDon {
         this.ngayin = LocalDate.of(ngay, thang, nam);
     }
 
-    public double getTongtien() {
+    public double  getTongtien() {
         return this.tongtien;
     }
 

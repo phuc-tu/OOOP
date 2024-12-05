@@ -38,7 +38,7 @@ public class Main_Nv {
                     nv.nhap();
                     danhSach.themNhanvien(nv);
                     try {
-                        danhSach.luuFile("NhanVien.txt");
+                        danhSach.luuFile("OOP/NhanVien.txt");
                         System.out.println("Nhan vien da duoc them va luu vao file.");
                     } catch (IOException e) {
                         System.out.println("Loi khi luu nhan vien vao file: " + e.getMessage());
@@ -52,7 +52,7 @@ public class Main_Nv {
                     nvMoi.nhap();
                     danhSach.suaNhanvien(idSua, nvMoi);
                     try {
-                        danhSach.luuFile("NhanVien.txt");
+                        danhSach.luuFile("OOP/NhanVien.txt");
                         System.out.println("Nhan vien da duoc sua va luu vao file.");
                     } catch (IOException e) {
                         System.out.println("Loi khi luu nhan vien vao file: " + e.getMessage());
@@ -64,7 +64,7 @@ public class Main_Nv {
                     String idXoa = sc.nextLine();
                     danhSach.xoaNhanvien(idXoa);
                     try {
-                        danhSach.luuFile("NhanVien.txt");
+                        danhSach.luuFile("OOP/NhanVien.txt");
                         System.out.println("Nhan vien da duoc xoa va luu vao file.");
                     } catch (IOException e) {
                         System.out.println("Loi khi luu nhan vien vao file: " + e.getMessage());

@@ -65,5 +65,11 @@ public class ChiTietHoaDon {
     public void setMaSP(int MaSP) {
         this.MaSP = MaSP;
     }
+    public int getDongia(){
+        return this.dongia;
+    }
+    public void setDongia(int dongia){
+        this.dongia = dongia;
+    }
 
 }

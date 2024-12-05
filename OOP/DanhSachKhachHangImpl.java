@@ -87,32 +87,50 @@ public class DanhSachKhachHangImpl implements DanhSachKhachHang {
         }
     }
 
+    
     public void docFile(String filename) throws IOException {
-        BufferedReader reader = new BufferedReader(new FileReader(filename));
-        String line;
-        soLuongKhachHang = 0;
-
-        while ((line = reader.readLine()) != null) {
-            String[] fields = line.split(", ");
-            if (fields.length >= 6) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
+            String line;
+            soLuongKhachHang = 0;
+    
+            while ((line = reader.readLine()) != null) {
                 try {
+                    String[] fields = line.split(", ");
+                    if (fields.length < 6) {
+                        System.out.println("Dong du lieu khong day du: " + line);
+                        continue;
+                    }
+    
+                    // Xử lý dữ liệu, kiểm tra từng trường
                     String name = fields[0].split(": ")[1];
                     int age = Integer.parseInt(fields[1].split(": ")[1]);
+    
+                    // Xử lý đặc biệt cho "Gioi tinh" và "Dia chi"
                     String gender = fields[2].split(": ")[1].trim();
                     String address = fields[3].split(": ")[1];
+    
+                    // Kiểm tra nếu "Gioi tinh" không hợp lệ
+                    if (!gender.equals("Nam") && !gender.equals("Nu")) {
+                        // Nếu không phải, hoán đổi giá trị giữa "Gioi tinh" và "Dia chi"
+                        String temp = gender;
+                        gender = address;
+                        address = temp;
+                    }
+    
                     String id = fields[4].split(": ")[1];
                     String sdt = fields[5].split(": ")[1];
-
+    
+                    // Tạo đối tượng KhachHang
                     KhachHang kh = new KhachHang(name, age, gender, address, id, sdt);
                     themKhachhang(kh);
+    
                 } catch (Exception e) {
                     System.out.println("Loi khi doc dong: " + line);
                 }
-            } else {
-                System.out.println("Dong du lieu khong day du: " + line);
             }
         }
-        reader.close();
     }
+    
+    
 
 }
