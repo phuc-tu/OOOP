@@ -169,6 +169,7 @@ public class DanhSachChiTietDonNH implements IchiTietHoaDon {
             ds[current + i] = new ChiTietHoaDon();
             ds[current + i].nhapct(sp);
         }
+        sp.showDs();
     }
 
     public void choose(DanhSachSanPham ds1) {
@@ -193,6 +194,7 @@ public class DanhSachChiTietDonNH implements IchiTietHoaDon {
                     break;
                 case 4:
                     nhapthem(ds1);
+                    
                     break;
                 case 5:
                     Timkiem();

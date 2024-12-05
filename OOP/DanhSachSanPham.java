@@ -275,6 +275,19 @@ public class DanhSachSanPham implements IsanPham {
         }
     }
 
+    public void updatesl(int maSP, int sl) {
+    for(sanpham sp1 : sp) {
+        if(sp1.getMaSP()==maSP)
+        {    if(sp1.getSl()<sl )
+            {
+                System.out.println("khong hop le");
+                break;
+
+            } else
+            { sp1.setSl(sp1.getSl()-sl); }
+        }
+    }
+    }
     public void choose() {
         @SuppressWarnings("resource")
         Scanner sc = new Scanner(System.in);

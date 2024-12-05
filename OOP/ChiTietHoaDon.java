@@ -13,6 +13,7 @@ public class ChiTietHoaDon {
     }
 
     public void nhapct(DanhSachSanPham ds1) {
+
         @SuppressWarnings("resource")
         Scanner sc = new Scanner(System.in);
         System.out.println("Nhap ma hoa don : ");
@@ -21,6 +22,7 @@ public class ChiTietHoaDon {
         this.MaSP = sc.nextInt();
         System.out.println("Nhap  so luong :");
         this.soluong = sc.nextInt();
+        ds1.updatesl(MaSP, soluong);
         this.dongia = ds1.FindID(this.MaSP);
         this.thanhtien = tinhtien(ds1);
     }
