@@ -12,7 +12,7 @@ public class Main_Cthd {
         danhSachChiTietDonNH.docFile("./OOP/chitiethoadon.txt",danhSachSanPham);
 
         danhSachChiTietDonNH.choose(danhSachSanPham);
-
+        danhSachSanPham.ghiFile("OOP/sanpham.txt");
         danhSachChiTietDonNH.ghiFile("./OOP/chitiethoadon.txt");
     }
 }

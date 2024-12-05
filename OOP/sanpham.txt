@@ -1,4 +1,4 @@
-Sneaker,101,Nike Air Max,10,2000000,Red,Leather,5,42,High,Running
+Sneaker,101,Nike Air Max,5,2000000,Red,Leather,5,42,High,Running
 Cao_got,201,Giày cao gót Gucci,5,1500000,Black,Suede,4,38,Pointed,10
 Sneaker,102,Adidas Ultraboost,8,2500000,White,Synthetic,6,43,Low,Walking
 Cao_got,202,Louboutin Classic,3,5000000,Red,Leather,3,37,Round,12
