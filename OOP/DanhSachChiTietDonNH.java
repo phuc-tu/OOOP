@@ -171,6 +171,26 @@ public class DanhSachChiTietDonNH implements IchiTietHoaDon {
         }
         sp.showDs();
     }
+    public void sua()
+    {  System.out.println("nhap vao ma hoa don can sua :");
+            int maHD=sc.nextInt();
+        System.out.println("nhap vao ma san pham :");
+        int maSP = sc.nextInt();
+        for(ChiTietHoaDon ct1:ds)
+        {
+            if(ct1.getMaHD()==maHD&&ct1.getMaSP()==maSP)
+            {
+                System.out.println("nhap vao maHD:");
+                ct1.setMaHD(sc.nextInt());
+                System.out.println("nhap vao maSP:");
+                ct1.setMaSP(sc.nextInt());
+                System.out.println("nhap vao so luong:");
+                ct1.setSoluong(sc.nextInt());
+                break;
+            }
+        }
+       
+    }
 
     public void choose(DanhSachSanPham ds1) {
         int choice;
@@ -179,7 +199,8 @@ public class DanhSachChiTietDonNH implements IchiTietHoaDon {
             System.out.println("2. Hien danh sach chi tiet hoa don");
             System.out.println("3. Xoa chi tiet don hang");
             System.out.println("4.Them chi tiet");
-            System.out.println("5.In ra cac san pham cung qua don");
+            System.out.println("5.sua chi tiet hoa don: ");
+            System.out.println("6.In ra cac san pham cung qua don");
             System.out.println("0.Thoat");
             choice = sc.nextInt();
             switch (choice) {
@@ -194,9 +215,11 @@ public class DanhSachChiTietDonNH implements IchiTietHoaDon {
                     break;
                 case 4:
                     nhapthem(ds1);
-                    
                     break;
                 case 5:
+                sua();
+                break;
+                case 6:
                     Timkiem();
                     break;
                 case 0:
@@ -205,7 +228,7 @@ public class DanhSachChiTietDonNH implements IchiTietHoaDon {
                 default:
                     System.out.println("Lua  chon khong hop le.");
             }
-        } while (choice != 4);
+        } while (choice != 0);
     }
 
 }

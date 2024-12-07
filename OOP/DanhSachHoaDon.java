@@ -10,7 +10,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class DanhSachHoaDon {
+public class DanhSachHoaDon implements IhoaDon {
     Scanner sc = new Scanner(System.in);
     private static HoaDon[] dshd = new HoaDon[0];
 
@@ -105,22 +105,16 @@ public class DanhSachHoaDon {
     }
 
     public HoaDon FindID(int id1) {
-        int l = 0;
-        int r = dshd.length - 1;
-        sort();
-        while (l <= r) {
-            int mid = (l + r) / 2;
-            if (dshd[mid].getMaHD() == id1) {
-                return dshd[mid];
-
-            } else if (dshd[mid].getMaHD() < id1) {
-                l = mid + 1;
-            } else {
-                r = mid - 1;
-            }
+        for(HoaDon hd1:dshd)
+        {
+         if(hd1.getMaHD()==id1)
+         {
+             return hd1;
+         }
         }
         return null;
-    }
+     }
+ 
 
     public void xoa() {
         System.out.println("Nhap ma san pham can xoa: ");
@@ -225,6 +219,7 @@ public class DanhSachHoaDon {
             System.out.println("5. Tinh tong trong khoang thoi gian");
             System.out.println("6. Them San pham ");
             System.out.println("7. Thong ke cac quy:");
+            System.out.println("8.Tim kiem");
             System.out.println("0. Thoat");
             System.out.print("NhAP  lua chon: ");
             choice = sc.nextInt();
@@ -245,10 +240,11 @@ public class DanhSachHoaDon {
                     LocalDate start;
                     LocalDate end;
                     System.out.println("nhap vao start");
+                    System.out.println("nhap ngay:");
                     int ngay = sc.nextInt();
-                    System.out.print("/");
+                    System.out.print("Nhap thang: ");
                     int thang = sc.nextInt();
-                    System.out.print("/");
+                    System.out.print("Nhap nam: ");
                     int nam = sc.nextInt();
                     System.out.println("nhap vao end");
                     int ngay1 = sc.nextInt();
@@ -271,13 +267,17 @@ public class DanhSachHoaDon {
                 case 7:
                     tkquy();
                     break;
+                case 8:
+                System.out.println("nhap vao ma hoa don can tim kiem: ");
+                int ma = sc.nextInt();
+                FindID(ma).xuat();
+                break;
                 case 0:
                     System.out.println("Thoat chuong trinh");
                     break;
                 default:
                     System.out.println("Lua chon khong hop le");
             }
-        } while (choice != 8);
+        } while (choice != 0);
     }
-
 }

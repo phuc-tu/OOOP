@@ -1,3 +1,7 @@
 public interface IhoaDon {
-    void nhap(DanhSachChiTietDonNH ds1);
+    void nhapthem(DanhSachChiTietDonNH ds2);
+    void sua();
+    void xoa();
+    HoaDon FindID(int id);
+    
 }

@@ -28,12 +28,9 @@ public class ChiTietHoaDon {
     }
 
     public void xuat() {
-        System.out.println("MaHD: " + this.MaHD);
-        System.out.println("MaSP :" + this.MaSP);
-        System.out.println("So luong :" + this.soluong);
-        System.out.println("Don  gia :" + this.dongia);
-        System.out.println("Thanh tien :" + this.thanhtien);
+        System.out.println("MaHD: " + "MaSP :" + this.MaSP+ "So luong :" + this.soluong +"Don  gia :" + this.dongia+" Thanh tien :" + this.thanhtien);
 
+        
     }
 
     public int getThanhtien() {

@@ -2,7 +2,7 @@
 import java.time.LocalDate;
 import java.util.Scanner;
 
-public class HoaDon implements IhoaDon {
+public class HoaDon {
     private int MaHD;
     private int MaNV;
     private int MaKH;
@@ -49,11 +49,7 @@ public class HoaDon implements IhoaDon {
     }
 
     public void xuat() {
-        System.out.println("MaHD: " + this.MaHD);
-        System.out.println("Ma Khach Hang : " + this.MaKH);
-        System.out.println("Ma nhan vien:  " + this.MaNV);
-        System.out.println("ngay  in: " + this.ngayin);
-        System.out.println("tong tien: " + this.tongtien);
+        System.out.println(" MaHD: " + this.MaHD+" Ma Khach Hang : " + this.MaKH+" Ma nhan vien: " + this.MaNV+" ngay  in: " + this.ngayin+" tong tien: " + this.tongtien);
 
     }
 
