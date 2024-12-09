@@ -103,7 +103,7 @@ public class DanhSachHoaDon implements IhoaDon {
             }
         }
     }
-
+    
     public HoaDon FindID(int id1) {
         for(HoaDon hd1:dshd)
         {
@@ -186,28 +186,36 @@ public class DanhSachHoaDon implements IhoaDon {
     }
 
     public void tkquy() {
-        int quy1 = 0;
-        int quy2 = 0;
-        int quy3 = 0;
-        int quy4 = 0;
-
-        for (HoaDon hd1 : dshd) {
-            int month = hd1.getNgayin().getMonthValue();
+        
+        int[] year = new int[10000]; 
+        int[][] thongKe = new int[10000][4];
+    
+        for (HoaDon hd : dshd) {
+            int y = hd.getNgayin().getYear();
+            int month = hd.getNgayin().getMonthValue();
+            year[y]++;
             if (month <= 3) {
-                quy1++;
+                thongKe[y][0]++; // Quý 1
             } else if (month <= 6) {
-                quy2++;
+                thongKe[y][1]++; // Quý 2
             } else if (month <= 9) {
-                quy3++;
+                thongKe[y][2]++; // Quý 3
             } else {
-                quy4++;
+                thongKe[y][3]++; // Quý 4
             }
         }
-        System.out.println("So hoa don trong quy 1 :" + quy1);
-        System.out.println("So hoa don trong quy 2 :" + quy2);
-        System.out.println("So hoa don trong quy 3 :" + quy3);
-        System.out.println("So hoa don trong quy 4 : " + quy4);
+
+        for (int y = 0; y < year.length; y++) {
+            if (year[y] > 0) {
+                System.out.println("Nam: " + y);
+                System.out.println("  So hoa don trong quy 1: " + thongKe[y][0]);
+                System.out.println("  So hoa don trong quy 2: " + thongKe[y][1]);
+                System.out.println("  So hoa don trong quy 3: " + thongKe[y][2]);
+                System.out.println("  So hoa don trong quy 4: " + thongKe[y][3]);
+            }
+        }
     }
+    
 
     public void choose(DanhSachChiTietDonNH ds1) {
         int choice;
