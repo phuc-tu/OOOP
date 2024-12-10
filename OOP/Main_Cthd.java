@@ -10,9 +10,10 @@ public class Main_Cthd {
 
         DanhSachChiTietDonNH danhSachChiTietDonNH = new DanhSachChiTietDonNH();
         danhSachChiTietDonNH.docFile("./OOP/chitiethoadon.txt",danhSachSanPham);
-
+       
         danhSachChiTietDonNH.choose(danhSachSanPham);
+        danhSachChiTietDonNH.ghiFile("./OOP/chitiethoadonOUT.txt");
         danhSachSanPham.ghiFile("OOP/sanpham.txt");
-        danhSachChiTietDonNH.ghiFile("./OOP/chitiethoadon.txt");
+        
     }
 }

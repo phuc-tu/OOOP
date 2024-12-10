@@ -61,7 +61,9 @@ public class DanhSachSanPham implements IsanPham {
         for (int i = 0; i < n; i++) {
             sanpham newSp;
             System.out.println("nhap chon:");
+            System.out.println("1.Sneaker || 2.Cao_Got");
             chon = sc.nextInt();
+            
             if (chon == 1) {
                 newSp = new Sneaker();
             } else if (chon == 2) {
@@ -70,6 +72,11 @@ public class DanhSachSanPham implements IsanPham {
                 newSp = new Sneaker();
             }
             newSp.nhap();
+            while (check(newSp.getMaSP()) == -1) {
+                System.out.println("Ma san pham bi trung, nhap lai:");
+                newSp.nhap();
+            }
+            sp = Arrays.copyOf(sp, sp.length + 1);
             sp[current + i] = newSp;
 
         }

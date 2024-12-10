@@ -21,12 +21,12 @@ public class DanhSachChiTietDonNH implements IchiTietHoaDon {
     
                 // Tách dữ liệu theo dấu phẩy
                 String[] parts = line.split(",");
-                if (parts.length >= 3) { // Đảm bảo ít nhất 3 phần tử: MaHD, MaSP, SoLuong
+                if (parts.length >=3) { // Đảm bảo ít nhất 3 phần tử: MaHD, MaSP, SoLuong
                     try {
                         int maHD = Integer.parseInt(parts[0].trim());
                         int maSP = Integer.parseInt(parts[1].trim());
                         int soLuong = Integer.parseInt(parts[2].trim());
-    
+
                         // Lấy đơn giá từ danh sách sản phẩm
                         int donGia = danhSachSanPham.FindID(maSP);
     
@@ -68,7 +68,7 @@ public class DanhSachChiTietDonNH implements IchiTietHoaDon {
                 bw.write(ct1.getMaHD() + "," +
                         ct1.getMaSP() + "," +
                         ct1.getSoluong() + "," +
-                        ct1.getThanhtien() + ",");
+                        ct1.getThanhtien());
                 bw.newLine(); // Xuống dòng sau mỗi sản phẩm
             }
             System.out.println("Ghi file thành công!");

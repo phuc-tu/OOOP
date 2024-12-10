@@ -7,4 +7,4 @@ Ten: Nguyen F, Tuoi: 40, Gioi tinh: Nu, Dia chi: TP. HCM, Ma nhan vien: NV006, C
 Ten: Le G, Tuoi: 29, Gioi tinh: Nam, Dia chi: Da Nang, Ma nhan vien: NV007, Chuc vu: Nhan vien, Luong: 5800000.0
 Ten: Tran H, Tuoi: 33, Gioi tinh: Nu, Dia chi: Binh Duong, Ma nhan vien: NV008, Chuc vu: Nhan vien, Luong: 5600000.0
 Ten: Pham I, Tuoi: 27, Gioi tinh: Nam, Dia chi: Ha Noi, Ma nhan vien: NV009, Chuc vu: Nhan vien, Luong: 5100000.0
-Ten: 1, Tuoi: 1, Gioi tinh: 1, Dia chi: 1, Ma nhan vien: 1, Chuc vu: 1, Luong: 1.0
+Ten: HUY, Tuoi: 36, Gioi tinh: nam, Dia chi: hcm, Ma nhan vien: giam doc, Chuc vu: giam doc, Luong: 10000.0

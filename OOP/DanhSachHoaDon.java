@@ -13,6 +13,14 @@ import java.util.Scanner;
 public class DanhSachHoaDon implements IhoaDon {
     Scanner sc = new Scanner(System.in);
     private static HoaDon[] dshd = new HoaDon[0];
+    public int check(int id) {
+        for (HoaDon hd1 : dshd) {
+            if (hd1.getMaHD() == id) {
+                return -1;
+            }
+        }
+        return 1;
+    }
 
     // Hàm đọc file
     public void docFile(String filePath, DanhSachChiTietDonNH ds) {
@@ -70,7 +78,13 @@ public class DanhSachHoaDon implements IhoaDon {
         for (int i = 0; i < n; i++) {
             dshd = Arrays.copyOf(dshd, dshd.length + 1);
             dshd[dshd.length - 1] = new HoaDon();
-            dshd[dshd.length - 1].nhap(ds1);
+            HoaDon newHD = new HoaDon();
+            newHD.nhap(ds1);
+            while (check(newHD.getMaHD()) == -1) {
+                System.out.println("Ma san pham bi trung, nhap lai:");
+                newHD.nhap(ds1);
+            }
+            dshd[dshd.length-1]=newHD;
         }
     }
 
@@ -162,7 +176,7 @@ public class DanhSachHoaDon implements IhoaDon {
             hd.setMaKH(sc.nextInt());
             System.out.println("Nhap vao ma nhan vien:");
             hd.setMaNV(sc.nextInt());
-            System.out.println("Nhap vao ngay lap:");
+            System.out.println("Nhap vao ngay lap hoa don:");
             System.out.println("Nhap ngay");
             int ngay = sc.nextInt();
             System.out.println("Nhap thang");
@@ -181,7 +195,14 @@ public class DanhSachHoaDon implements IhoaDon {
         dshd = Arrays.copyOf(dshd, current + n);
         for (int i = 0; i < n; i++) {
             dshd[current + i] = new HoaDon();
-            dshd[current + i].nhap(ds1);
+            HoaDon newHD = new HoaDon();
+            newHD.nhap(ds1);
+            while(check(newHD.getMaHD())==-1)
+            {
+                System.out.println("Ma hoa don da ton tai nhap lai hoa don :");
+                newHD.nhap(ds1);
+            }
+             dshd[current+i]=newHD;
         }
     }
 
@@ -225,7 +246,7 @@ public class DanhSachHoaDon implements IhoaDon {
             System.out.println("3. Xoa san pham ");
             System.out.println("4. Sua thong tin san pham");
             System.out.println("5. Tinh tong trong khoang thoi gian");
-            System.out.println("6. Them San pham ");
+            System.out.println("6. Them Hoa Don ");
             System.out.println("7. Thong ke cac quy:");
             System.out.println("8.Tim kiem");
             System.out.println("0. Thoat");
@@ -248,17 +269,20 @@ public class DanhSachHoaDon implements IhoaDon {
                     LocalDate start;
                     LocalDate end;
                     System.out.println("nhap vao start");
-                    System.out.println("nhap ngay:");
+                    System.out.print("nhap ngay:");
                     int ngay = sc.nextInt();
                     System.out.print("Nhap thang: ");
                     int thang = sc.nextInt();
                     System.out.print("Nhap nam: ");
                     int nam = sc.nextInt();
                     System.out.println("nhap vao end");
+                    System.out.print("Ngay: ");
+
                     int ngay1 = sc.nextInt();
-                    System.out.print("/");
+                    System.out.print("Thang :");
+
                     int thang1 = sc.nextInt();
-                    System.out.print("/");
+                    System.out.println("Nam:");
                     int nam1 = sc.nextInt();
                     try {
                         start = LocalDate.of(nam, thang, ngay);

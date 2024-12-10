@@ -68,14 +68,7 @@ public abstract  class sanpham {
         
     
     public void xuat(){
-        System.out.println("Ma San pham : "+this.MaSP);
-        System.out.println("Ten San pham : "+this.tensp);
-        System.out.println("So luong hien co: " +this.sl);
-        System.out.println("Mau :" + this.mau);
-        System.out.println("Gia: "+this.dongia);
-        System.out.println("Chat lieu :"+this.chatlieu);
-        System.out.println("Do day cua de :"+this.dodayde);
-        System.out.println("Size cua giay : "+this.size);
+        System.out.println(" Ma San pham : "+this.MaSP+" Ten San pham : "+this.tensp+" So luong hien co: " +this.sl+" Mau :" + this.mau+" Gia: "+this.dongia+" Chat lieu :"+this.chatlieu+" Do day cua de :"+this.dodayde+"Size cua giay : "+this.size);
     }
     public int getMaSP(){
         return this.MaSP;
