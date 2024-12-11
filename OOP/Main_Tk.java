@@ -7,6 +7,7 @@ public class Main_Tk {
         int soNam = 0, soNu = 0;
         String filePath = "OOP/NhanVien.txt";
         int choice;
+        
 
         do {
             System.out.println("====THONG KE NHAN VIEN======");

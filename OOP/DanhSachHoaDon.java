@@ -118,6 +118,7 @@ public class DanhSachHoaDon implements IhoaDon {
         }
     }
     
+    @Override
     public HoaDon FindID(int id1) {
         for(HoaDon hd1:dshd)
         {
@@ -130,6 +131,7 @@ public class DanhSachHoaDon implements IhoaDon {
      }
  
 
+    @Override
     public void xoa() {
         System.out.println("Nhap ma san pham can xoa: ");
         int id = sc.nextInt();
@@ -154,6 +156,7 @@ public class DanhSachHoaDon implements IhoaDon {
         }
     }
 
+    @Override
     public void sua() {
         System.out.println("Nhap vao ma hoa don can sua");
         int id = sc.nextInt();
@@ -187,6 +190,7 @@ public class DanhSachHoaDon implements IhoaDon {
         }
     }
 
+    @Override
     public void nhapthem(DanhSachChiTietDonNH ds1) {
         int n;
         System.out.println("nhap vao so luong can them :");
@@ -236,8 +240,59 @@ public class DanhSachHoaDon implements IhoaDon {
             }
         }
     }
-    
+    public void TongQuy(){
+        int [] year = new int[10000];
+        int[][] TongQuy = new int[10000][4];
+        for (HoaDon hd : dshd) {
+            int y = hd.getNgayin().getYear();
+            int month = hd.getNgayin().getMonthValue();
+            year[y]++;
+            if (month <= 3) {
+                TongQuy[y][0] += hd.getTongtien(); // Quý 1
+            } else if(month<=6)
+            {
+                TongQuy[y][1] += hd.getTongtien(); //Quý 2
+            } else if(month<=9) {
+                TongQuy[y][2]+=hd.getTongtien();  //Quy 3
+            } else {
+                TongQuy[y][3] += hd.getTongtien(); //Quý 4
+            }
 
+        }
+        for(int i=0;i<year.length;i++)
+        {
+            if(year[i]>0)
+            {
+                System.out.println("Nam: "+i);
+                System.out.println("Tong tien trong quy 1: "+TongQuy[i][0]);
+                System.out.println("Tong tien trong quy 2: "+TongQuy[i][1]);
+                System.out.println("Tong tien trong quy 3: "+TongQuy[i][2]);
+                System.out.println("Tong tien trong quy 4: "+TongQuy[i][3]);
+            }
+
+        }
+}  
+    public void TongNam()
+    {
+        int[] year = new int[10000];
+        for(HoaDon hd1 : dshd) {
+            int y= hd1.getNgayin().getYear();
+            year[y]++;
+        }
+        for(int i=0;i<year.length;i++)
+        {
+            if(year[i]>0)
+            {   double s=0;
+                System.out.println("Nam: "+i);
+                for(HoaDon hd1:dshd){
+                    if(hd1.getNgayin().getYear()==i){
+                        s=s+hd1.getTongtien();
+                    }
+                }
+                System.out.println("Tong tien nam: "+s);
+            }
+        }
+    }    
     public void choose(DanhSachChiTietDonNH ds1) {
         int choice;
         do {
@@ -247,8 +302,10 @@ public class DanhSachHoaDon implements IhoaDon {
             System.out.println("4. Sua thong tin san pham");
             System.out.println("5. Tinh tong trong khoang thoi gian");
             System.out.println("6. Them Hoa Don ");
-            System.out.println("7. Thong ke cac quy:");
+            System.out.println("7. Thong ke cac quy");
             System.out.println("8.Tim kiem");
+            System.out.println("9.Tong tien cac hoa don theo quy");
+            System.out.println("10.Tong tien cac hoa don theo nam");
             System.out.println("0. Thoat");
             System.out.print("NhAP  lua chon: ");
             choice = sc.nextInt();
@@ -303,6 +360,12 @@ public class DanhSachHoaDon implements IhoaDon {
                 System.out.println("nhap vao ma hoa don can tim kiem: ");
                 int ma = sc.nextInt();
                 FindID(ma).xuat();
+                break;
+                case 9:
+                TongQuy();
+                break;
+                case 10:
+                TongNam();
                 break;
                 case 0:
                     System.out.println("Thoat chuong trinh");

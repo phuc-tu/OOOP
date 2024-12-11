@@ -11,6 +11,6 @@ public class Main_Dshd {
         danhSachHoaDon.docFile("OOP/hoaddon.txt",danhSachChiTietDonNH);
         danhSachHoaDon.choose(danhSachChiTietDonNH);
 
-        danhSachHoaDon.ghiFile("OOP/hoaddonOUT.txt");
+        danhSachHoaDon.ghiFile("OOP/hoaddon.txt");
     }
 }

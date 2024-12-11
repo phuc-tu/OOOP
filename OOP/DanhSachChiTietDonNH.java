@@ -121,6 +121,7 @@ public class DanhSachChiTietDonNH implements IchiTietHoaDon {
         }
         return s;
     }
+    @Override
     public void Timkiem(){
         int id;
         System.out.println("Nhap vao ma hoa don:");
@@ -130,7 +131,8 @@ public class DanhSachChiTietDonNH implements IchiTietHoaDon {
       if(ct.getMaHD()==kq)
         ct.xuat(); 
 }
-}      public void xoa() {
+}   @Override
+      public void xoa() {
     System.out.println("nhap vao maHD can xoa:");
     int id1 = sc.nextInt();
     System.out.println("Nhap ma san pham  can xoa: ");
@@ -159,6 +161,7 @@ public class DanhSachChiTietDonNH implements IchiTietHoaDon {
     }
 }
 
+    @Override
     public void nhapthem(DanhSachSanPham sp) {
         int n;
         System.out.println("nhap vao so luong can them :");
@@ -171,6 +174,7 @@ public class DanhSachChiTietDonNH implements IchiTietHoaDon {
         }
         sp.showDs();
     }
+    @Override
     public void sua()
     {  System.out.println("nhap vao ma hoa don can sua :");
             int maHD=sc.nextInt();
